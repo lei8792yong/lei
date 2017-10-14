@@ -1,0 +1,220 @@
+{% extends 'base.html' %}
+
+{% block page-content %}
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">IDC管理</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                
+
+                <div class="col-lg-12">
+
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            IDC信息管理
+                        </div>
+                        <div  class="panel-body">
+
+                     <div class="col-lg-12">
+                    <p>
+                        <a  href="{% url 'idc_add' %}"><button class="btn btn-primary " type="button">添加IDC</button></a>
+                    </p>
+                </div>
+                    <div class="col-lg-8">
+                    <div class="panel panel-default">
+
+
+                        <div class="panel-heading">
+                            基本信息
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>机房名</th>
+                                            <th>所在地</th>
+                                            <th>级别</th>
+                                            <th>主机数</th>
+                                            <th>操作</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    {%for i in Idclists%}
+                                        <tr id="{{i.id}}" class="hover">
+                                            <td>{{i.id}}</td>
+                                            <td>{{i.idcname}}</td>
+                                            <td>{{i.idczone}}</td>
+                                            {%for k,v in Idclevel.items%}
+                                                {%if k == i.idclevel%}
+                                                    <td>{{v}}</td>
+                                                {%endif%}
+                                            {%endfor%}
+
+                                            {%for k,v in idcdict.items%}
+                                                {%if k == i.id%}
+                                                    <td>{{v}}</td>
+                                                {%endif%}
+                                            {%endfor%}
+                                          
+                                              <td class="center">
+                                                <a class="btn btn-xs btn-info" href="/idc/edit/{{i.id}}">编辑</a>
+                                                <button class="btn btn-xs btn-danger" data-toggle="modal"  onclick="clickurl('{{i.id}}')"  data-target="#myModal" >删除</button>
+                                            </td>
+                                        </tr>
+                                    {%endfor%}
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+
+
+
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+
+                <div class="col-lg-4">
+                  
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            机房概述
+                        </div>
+                        <div class="panel-body">
+                            <p id="desc">机房概述说明</p>
+                        </div>
+                        <div class="panel-footer">
+                           Idc Description
+                        </div>
+                    </div>
+           
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            机房地址
+                        </div>
+                        <div class="panel-body">
+                            <p id="addr">机房地址</p>
+                        </div>
+                        <div class="panel-footer">
+                            Idc Address
+                        </div>
+                    </div>
+                </div>
+                </div>
+                            
+                    </div>
+                    <!-- /.panel -->
+                </div>
+
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+                                   aria-labelledby="myModalLabel" aria-hidden="true">
+                                   <div class="modal-dialog">
+                                      <div class="modal-content">
+                                         <div class="modal-header">
+                                            <button type="button" class="close"
+                                               data-dismiss="modal" aria-hidden="true">
+                                                  &times;
+                                            </button>
+                                            <h4 class="modal-title" id="myModalLabel">
+                                               删除提醒
+                                            </h4>
+                                         </div>
+                                         <div class="modal-body">
+                                            系统提示:您是否确认删除这条记录!!!!
+                                         </div>
+                                         <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                               data-dismiss="modal">关闭
+                                            </button>
+                                             <button type="button" class="btn btn-primary formSubmit" id="postdel"> 删除 </button>
+                                            <!--<a class="btn btn-primary" id="clickurl" > 删除</a>-->
+                                         </div>
+
+                                      </div><!-- /.modal-content -->
+                                </div><!-- /.modal -->
+
+
+
+
+
+                            </div>
+                            <!-- /.table-responsive
+                            <script>
+                                function clickurl(url){
+
+                                       $("#clickurl").attr("href","/account/del/"+url);
+                                }
+                            </script>
+                                -->
+                        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog"   aria-labelledby="myModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">系统提示</h4>
+                              </div>
+                              <div class="modal-body">
+                                     <p id="getdata">ddddddd</p>
+                              </div>
+                            <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                    <a class="btn btn-primary" href="/idc/list/">确定</a>
+                                </div>
+                            </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                    <script>
+                       function clickurl(url){
+                            $("#postdel").click(function() {
+                                $.get("/idc/del/"+url,
+                                         function (data) {
+                                            $('#myModal').modal('hide')
+                                            $("#getdata").html(data);
+                                            $('#myModal2').modal('show');
+                                        });
+                            });
+                        }
+                  </script>
+
+
+
+                <script type="text/javascript">
+                    $(function(){
+                        $(".hover").hover(function(){
+                         var id=$(this).attr("id");
+                        timer = setTimeout(function(){
+                              $.get("/idc/other/" + id, function(data){
+
+                                      $("#desc").html(data["desc"]);
+                                      $("#addr").html(data["addr"]);
+                                });
+                            },600);
+                        },function(){
+                           //这里去clear
+                            clearTimeout(timer);
+                        });
+                    });
+                </script>
+
+
+
+            </div>
+            <!-- /.row -->
+
+    {% endblock %}

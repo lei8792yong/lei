@@ -1,0 +1,135 @@
+
+{% extends 'base.html' %}
+
+
+{% block page-content %}
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">IDC修改</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                
+
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            IDC修改
+                        </div>
+                        <div  class="panel-body">
+                    <form class="form-horizontal nice-validator n-yellow" method="post" id="assetForm" >
+                        <div class="form-group"><label class="col-sm-2 control-label"> 机房名 <span class="red-fonts">*</span></label>
+                            <div class="col-sm-6"><input type="text" class="form-control" name="idc_name" id="idcname" value="{{idcdata.idcname}}" ></div>
+                        </div>
+
+
+                        <div class="form-group"><label class="col-sm-2 control-label"> 所在地 <span class="red-fonts">*</span></label>
+                                 <div class="col-sm-6">
+                                        <select class="form-control m-b" name="zone" >
+                                                {% for i in ZoneData%}
+                                                    {%if  idcdata.idczone_id == i.id %}
+
+                                                        <option value="{{i.id}}" selected>{{i.name}}</option>
+                                                    {%else%}
+
+                                                        <option value="{{i.id}}">{{i.name}}</option>
+                                                    {%endif%}
+                                                {%endfor%}
+                                        </select>
+                                 </div>
+                        </div>
+
+                        <div class="form-group"><label class="col-sm-2 control-label"> 级别 <span class="red-fonts">*</span></label>
+                             <div class="col-sm-6">
+                                        <select class="form-control m-b" name="level" >
+                                                {% for k,v in Idclevel.items %}
+                                                    {%if idcdata.idclevel == k %}
+                                                        <option value="{{k}}" selected>{{v}}</option>
+                                                    {%else%}
+                                                        <option value="{{k}}">{{v}}</option>
+                                                    {%endif%}
+                                                {%endfor%}
+                                        </select>
+                             </div>
+                        </div>
+
+
+
+
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group"><label class="col-sm-2 control-label"> 机房概述 </label>
+                            <div class="col-sm-6"><textarea name="desc" class="form-control" rows="3" >{{idcdata.idcdesc}}</textarea></div>
+                        </div>
+
+
+                         <div class="hr-line-dashed"></div>
+                        <div class="form-group"><label class="col-sm-2 control-label"> 机房地址 </label>
+                            <div class="col-sm-6"><textarea name="addr" class="form-control" rows="3"  >{{idcdata.idcaddr}}</textarea></div>
+                        </div>
+
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <div class="col-sm-4 col-sm-offset-5">
+                                <button type="reset" class="btn btn-white"> 重置 </button>
+                                <button type="button" class="btn btn-primary"  id="postset"> 提交 </button>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                    <!-- /.panel -->
+                </div>
+            </div>
+            <!-- /.row -->
+                       <div class="modal fade" id="myModal" tabindex="-1" role="dialog"  id="myModal" aria-labelledby="myModalLabel">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">系统提示</h4>
+                          </div>
+                          <div class="modal-body">
+                                 <p id="getdata">ddddddd</p>
+                          </div>
+
+                            <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                    <a class="btn btn-primary" href="/idc/list/">确定</a>
+                            </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+
+                  <script>
+                       $(function(){
+                            $("#postset").click(function() {
+                                  if($(idcname).val()=='') {
+                                    　　$("#getdata").html("请输入IDC名");
+                                        $('#myModal').modal('show');
+                                        return false;
+                                　}
+
+                                $.post("",
+                                         {idcname: $("input[name='idc_name']").val(),
+                                           zone: $("select[name='zone']").val(),
+                                           level: $("select[name='level']").val(),
+                                           desc: $("textarea[name='desc']").val(),
+                                           addr: $("textarea[name='addr']").val(),
+                                           csrfmiddlewaretoken: '{{ csrf_token }}'},
+                                         function (data) {
+                                            $("#getdata").html(data);
+                                            $('#myModal').modal('show');
+                                        });
+                            });
+                        });
+                  </script>
+
+
+
+        </div>
+        <!-- /#page-wrapper -->
+
+   {% endblock %}

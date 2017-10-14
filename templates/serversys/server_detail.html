@@ -1,0 +1,249 @@
+{% extends 'base.html' %}
+
+{% block  page-content %}
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">服务器信息</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                        <input type="button" class="btn btn-primary " name="Submit"  onclick="javascript:history.back(-1);"  value="返回" >
+                    </p>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            服务器详细信息
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="col-lg-5">
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        基本信息
+                                    </div>
+                                 <div class="ibox-content" style="display: block;">
+                        <div>
+                            <div class="text-left">
+
+                                 {%for i in ServerData%}
+                                <table class="table">
+                                    <tbody><tr>
+                                        <td class="text-navy">主机名:</td>
+                                        <td>{{i.hostname}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-navy">外网IP:</td>
+                                        <td>{{i.externalip}}</td>
+                                    </tr>
+                                     <tr>
+                                        <td class="text-navy">内网IP:</td>
+                                        <td>{{i.internalip}}</td>
+                                    </tr>
+
+                                     <tr>
+                                        <td class="text-navy">密码:</td>
+                                        <td ><input type="password" class="form-control" name="passwd"  id="pwd" svalue="{{i.passwd}}" value="{{i.passwd}}"></td>
+                                        <tr>
+                                            <td></td>
+                                            <td><button class="btn btn-xs btn-info" id="echopasswd"  onclick="clickurl('{{i.id}}')" >显示密码</button>&nbsp;   <button class="btn btn-xs btn-info" id="offpasswd"   >关闭显示</button></td>
+                                        </tr>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td class="text-navy">城市:</td>
+                                        <td>{{i.idc.idczone}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-navy">IDC:</td>
+                                        <td>{{i.idc}}</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="text-navy">添加日期:</td>
+                                        <td>{{i.addtime | date:"Y-m-d H:i"}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-navy">备注:</td>
+                                        <td class=" col-lg-9">  {{i.comment}}</td>
+                                    </tr>
+
+                              
+
+                                </tbody></table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                         
+                            </div>
+
+                              <div class="col-lg-3">
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        硬件信息
+                                    </div>
+                                 <div class="ibox-content" style="display: block;">
+                                    <div>
+                                        <div class="text-left">
+                                            <table class="table">
+                                                <tbody>
+
+                                                <tr>
+                                                    <td class="text-navy">CPU:</td>
+                                                    <td>{{i.cpu}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-navy">频率:</td>
+                                                    <td>{{i.cpumhz}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-navy">Mem:</td>
+                                                    <td>{{i.mem}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-navy">Disk:</td>
+                                                    <td>{{i.disk}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-navy">主机类型:</td>
+
+                                                    {% for k,v in Server_type.items%}
+                                                        {% if k == i.type%}
+                                                            <td>{{v}}</td>
+                                                        {%endif%}
+                                                    {%endfor%}
+
+
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-navy">系 统:</td>
+
+                                                     {% for k,v in Server_system.items%}
+                                                        {% if k == i.system%}
+                                                            <td>{{v}}</td>
+                                                        {%endif%}
+                                                    {%endfor%}
+                                                </tr>
+                                                <tr>
+                                                     <td class="text-navy">状态:</td>
+                                             {%for k,v in ServerStatus.items%}
+                                                {%if  k == i.status%}
+                                                    {%if i.status == 1%}
+                                                        <td class="center "><span class="running_510">{{v}}</span></td>
+                                                    {%endif%}
+                                                    {%if i.status == 2%}
+                                                        <td class="center "><span class="down_610">{{v}}</span></td>
+
+                                                    {%endif%}
+
+                                                    {%if i.status == 3%}
+                                                        <td class="center "><span class="unknow_710">{{v}}</span></td>
+
+                                                    {%endif%}
+                                                {%endif%}
+                                            {%endfor%}
+                                                </tr>
+
+
+                                            </tbody></table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                             
+
+
+                            <div class="col-lg-4">
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        其它信息
+                                    </div>
+                                 <div class="ibox-content" style="display: block;">
+                                    <div>
+                                        <div class="text-left">
+                                            <table class="table">
+                                                <tbody>
+
+                                                <tr>
+                                                    <td class="text-navy">部门:</td>
+                                                    <td>{{i.dept}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-navy">应用:</td>
+                                                    <td>{{i.businessname}}</td>
+                                                </tr>
+
+                                                  <tr>
+                                                    <td class="text-navy">应用负责人:</td>
+                                                    <td>{{i.businessname.contactperson}}</td>
+                                                </tr>
+
+                                                  <tr>
+                                                    <td class="text-navy">负责人联系方式:</td>
+                                                    <td>{{i.businessname.contactphone}}</td>
+                                                </tr>
+                                               
+                                            </tbody></table>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                                 {%endfor%}
+                            
+                            <!-- /.table-responsive -->
+                            
+                        </div>
+                        <!-- /.panel-body -->
+
+                    </div>
+                    <!-- /.panel -->
+
+                    <script>
+
+
+                        function clickurl(url){
+
+                            $(function() {
+                                       $.get("/display/passwd/"+url,
+                                         function (data) {
+                                           //$("input[name='passwd']").replaceWith("<input type='text' name='passwd' value=''+data/>");
+                                            $("input[name='passwd']").attr({type:"text",value:data});
+                                             //$("input[name='passwd']").attr("value",data);
+                                        });
+                            });
+                        }
+                    </script>
+
+                    <script>
+                          $(function(){
+                                $("#offpasswd").click(function() {
+                                     var svalue=$("input[name='passwd']").attr("svalue");
+                                     $("input[name='passwd']").attr({type:"password",value:svalue});
+                                });
+                          });
+                    </script>
+
+
+                </div>
+            </div>
+            <!-- /.row -->
+
+{%endblock%}
+
+
+
