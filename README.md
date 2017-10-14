@@ -1,0 +1,2 @@
+# Miniwan
+miniwan cmdb
