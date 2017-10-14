@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # RoddySys
 ### 系统介绍
   RoddySys 运维系统包含如下功能：服务器信息添加、批量添加、IDC添加、域名管理、IDC管理等功能<br>
@@ -24,3 +25,7 @@
   
 ## 说明
   具体完成后会将代码更新到github上<br>
+=======
+# Miniwan
+miniwan cmdb
+>>>>>>> 55cb48bfd7aa1e93b9ab92643ded30053eb7f09c
