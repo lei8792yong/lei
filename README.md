@@ -10,13 +10,7 @@
   v1.1用户登录管理<br>
   v1.2用户管理模块更新(内置三种权限：超级管理员、系统管理员、普通用户),普通用户只有查看功能，系统管理不能修改密码<br>
   v1.3完成资产管理模块功能（添加主机、批量添加、导出主机列表（excel表））,新增主机状态监控功能（Running,Down,unKnown）
-  ![image](https://github.com/roddyofchina/RoddySys/blob/master/templates/info/server.jpg)
-  <br>
-  
-  ![image](https://github.com/roddyofchina/RoddySys/blob/master/templates/info/cc.jpg)
-  <br>
-  
-  ![image](https://github.com/roddyofchina/RoddySys/blob/master/templates/info/ff.png)
+
   
   v1.4功能开放说明：域名管理及域名到期通知（正在完成中。。。。）<br>
   
@@ -26,7 +20,11 @@
 ## 说明
   具体完成后会将代码更新到github上<br>
 =======
+
+#TEST git
+2017-10-15 14:56:00
+
 # Miniwan
 miniwan cmdb
 >>>>>>> 55cb48bfd7aa1e93b9ab92643ded30053eb7f09c
-2017-10-15 14:56:00
+
