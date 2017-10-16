@@ -4,6 +4,7 @@ from django.contrib import admin
 from django.conf import settings
 from serversys.views import *
 from domainsys.views import *
+from cmdb.views import *
 
 
 
@@ -56,4 +57,7 @@ urlpatterns += patterns('domainsys',
     url(r'^provider/edit/$',provider_edit,name='provider_edit'),
 )
 
+urlpatterns += patterns('cmdb',
+    url(r'^cmdb/list/$',cmdb_list,name='cmdb_list'),
+)
 
