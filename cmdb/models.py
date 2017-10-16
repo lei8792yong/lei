@@ -1,5 +1,6 @@
 # _*_ coding:utf-8 _*_
 from django.db import models
+from serversys.models import *
 
 # Create your models here.
 class Account(models.Model):
@@ -14,11 +15,13 @@ class Account(models.Model):
     Create_Date = models.DateTimeField('创建时间')
 
     def __unicode__(self):
-        return u'%s %s %s %s %s %s %s %s %s' % (self.SN,self.Business,self.IP,self.Inner_IP,self.User,self.Passwd,self.Port,self.Landing_mode,self.Create_Date)
+        return self.SN
+
+    # def __unicode__(self):
+    #     return u'%s %s %s %s %s %s %s %s %s' % (self.SN,self.Business,self.IP,self.Inner_IP,self.User,self.Passwd,self.Port,self.Landing_mode,self.Create_Date)
 
 class cmdb(models.Model):
     SN = models.CharField('序列号',max_length=30)
-    Business = models.ForeignKey('Group_cmdb')
     CPU = models.CharField('CPU',max_length=100)
     Fan = models.CharField('风扇',max_length=100)
     Motherboard = models.CharField('主板',max_length=100)
@@ -34,21 +37,20 @@ class cmdb(models.Model):
     Who_uses = models.CharField('使用者',max_length=100)
     Price = models.IntegerField('采购价',max_length=100)
     Supplier = models.ForeignKey('Group_Supplier')
+    dept = models.ForeignKey(Dept, null=True, blank=True)
     Create_Date = models.DateTimeField('创建时间')
 
     def __unicode__(self):
-        return u'%s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s' % (self.SN,self.Business,self.CPU,self.Fan,self.Motherboard,self.Memory,self.Graphics,self.Hard_disk1,self.Hard_disk2,
-                                                              self.Keyboard,self.Mouse,self.Chassis,self.Power_Supply,self.Monitor,self.Who_uses,self.Supplier,self.Create_Date)
+        return self.SN
 
-class Group_cmdb(models.Model):
-    Group_name = models.CharField('组名',max_length=100)
+    # def __unicode__(self):
+    #     return u'%s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s' % (self.SN,self.Business,self.CPU,self.Fan,self.Motherboard,self.Memory,self.Graphics,self.Hard_disk1,self.Hard_disk2,
+    #                                                           self.Keyboard,self.Mouse,self.Chassis,self.Power_Supply,self.Monitor,self.Who_uses,self.Supplier,self.Create_Date)
 
-    def __unicode__(self):
-        return u'%s' % (self.Group_name)
 
 class Group_Supplier(models.Model):
     Supplier_name = models.CharField('供应商',max_length=100)
     Phone = models.IntegerField('联系方式',max_length=100)
 
-    def __unicode__(self):
-        return u'%s %s' % (self.Supplier_name,self.Phone)
+    # def __unicode__(self):
+    #     return u'%s %s' % (self.Supplier_name,self.Phone)
