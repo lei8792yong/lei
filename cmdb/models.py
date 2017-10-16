@@ -1,4 +1,5 @@
 from django.db import models
+# _*_ coding:utf-8 _*_
 
 # Create your models here.
 class Account(models.Model):
