@@ -59,37 +59,25 @@
                                             <th>显卡</th>
                                             <th>硬盘</th>
                                             <th>键盘/鼠标</th>
-                                            <th>状态</th>
+                                            <th>使用者</th>
                                             <th>操作</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    {%for s in Serverlist%}
+                                    {%for s in cmdb%}
                                         <tr class="odd gradeX">
-                                            <td>{{s.hostname}}</td>
-                                            <td>{{s.externalip}}</td>
-                                            <td>{{s.internalip}}</td>
-                                            <td>{{s.virtip}}</td>
-                                            <td>{{s.idc.idczone}}</td>
+                                            <td>{{s.SN}}</td>
+                                            <td>{{s.CPU}}</td>
+                                            <td>{{s.Fan}}</td>
+                                            <td>{{s.Motherboard}}</td>
+                                            <td>{{s.Memory}}</td>
+                                            <td>{{s.Graphics}}</td>
+                                            <td>{{s.Hard_disk1}}</td>
+                                            <td>{{s.Keyboard}}</td>
+                                            <td>{{s.Who_uses}}</td>
                                             <td class="center">{{s.idc}}</td>
                                             <td class="center">{{s.dept}}</td>
                                             <td class="center">{{s.businessname}}</td>
-                                            {%for k,v in ServerStatus.items%}
-                                                {%if  k == s.status%}
-                                                    {%if s.status == 1%}
-                                                        <td class="center "><span class="running_510">{{v}}</span></td>
-                                                    {%endif%}
-                                                    {%if s.status == 2%}
-                                                        <td class="center "><span class="down_610">{{v}}</span></td>
-
-                                                    {%endif%}
-
-                                                    {%if s.status == 3%}
-                                                        <td class="center "><span class="unknow_710">{{v}}</span></td>
-
-                                                    {%endif%}
-                                                {%endif%}
-                                            {%endfor%}
                                             <td class="center">
                                                 <a class="btn btn-xs btn-primary" href="/server/server_detail/{{s.id}}">详情</a>
                                                 <a class="btn btn-xs btn-info" href="/server/edit/{{s.id}}">编辑</a>
