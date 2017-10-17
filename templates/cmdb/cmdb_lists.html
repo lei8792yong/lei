@@ -59,8 +59,14 @@
                                             <th>显卡</th>
                                             <th>硬盘</th>
                                             <th>键盘/鼠标</th>
+                                            <th>机箱</th>
+                                            <th>电源</th>
+                                            <th>显示器</th>
                                             <th>使用者</th>
-                                            <th>操作</th>
+                                            <th>采购价</th>
+                                            <th>供应商</th>
+                                            <th>部门</th>
+                                            <th>采购时间</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -74,15 +80,14 @@
                                             <td>{{s.Graphics}}</td>
                                             <td>{{s.Hard_disk1}}</td>
                                             <td>{{s.Keyboard}}</td>
+                                            <td>{{s.Chassis}}</td>
+                                            <td>{{s.Power_Supply}}</td>
+                                            <td>{{s.Monitor}}</td>
                                             <td>{{s.Who_uses}}</td>
-                                            <td class="center">{{s.idc}}</td>
-                                            <td class="center">{{s.dept}}</td>
-                                            <td class="center">{{s.businessname}}</td>
-                                            <td class="center">
-                                                <a class="btn btn-xs btn-primary" href="/server/server_detail/{{s.id}}">详情</a>
-                                                <a class="btn btn-xs btn-info" href="/server/edit/{{s.id}}">编辑</a>
-                                                 <button class="btn btn-xs btn-danger" data-toggle="modal"  onclick="clickurl('{{s.id}}')"  data-target="#myModal" >删除</button>
-                                            </td>
+                                            <td>{{s.Price}}</td>
+                                            <td>{{s.Supplier.Supplier_name}}</td>
+                                            <td>{{s.dept.name}}</td>
+                                            <td>{{s.Create_Date}}</td>
                                         </tr>
                                     {%endfor%}
 

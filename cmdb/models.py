@@ -17,9 +17,6 @@ class Account(models.Model):
     def __unicode__(self):
         return self.SN
 
-    # def __unicode__(self):
-    #     return u'%s %s %s %s %s %s %s %s %s' % (self.SN,self.Business,self.IP,self.Inner_IP,self.User,self.Passwd,self.Port,self.Landing_mode,self.Create_Date)
-
 class cmdb(models.Model):
     SN = models.CharField('序列号',max_length=30)
     CPU = models.CharField('CPU',max_length=100)
@@ -28,28 +25,19 @@ class cmdb(models.Model):
     Memory = models.CharField('内存条',max_length=100)
     Graphics = models.CharField('显卡',max_length=100)
     Hard_disk1 = models.CharField('硬盘1',max_length=100)
-    Hard_disk2 = models.CharField('硬盘2',max_length=100)
     Keyboard = models.CharField('键盘/鼠标',max_length=100)
     Chassis = models.CharField('机箱',max_length=100)
     Power_Supply = models.CharField('电源',max_length=100)
     Monitor = models.CharField('显示器',max_length=100)
     Who_uses = models.CharField('使用者',max_length=100)
     Price = models.IntegerField('采购价',max_length=100)
-    Supplier = models.ForeignKey('Group_Supplier')
-    dept = models.ForeignKey(Dept, null=True, blank=True)
+    Supplier = models.ForeignKey('Group_Supplier')         #供应商
+    dept = models.ForeignKey(Dept, null=True, blank=True)  #部门
     Create_Date = models.DateTimeField('创建时间')
 
     def __unicode__(self):
         return self.SN
 
-    # def __unicode__(self):
-    #     return u'%s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s' % (self.SN,self.Business,self.CPU,self.Fan,self.Motherboard,self.Memory,self.Graphics,self.Hard_disk1,self.Hard_disk2,
-    #                                                           self.Keyboard,self.Mouse,self.Chassis,self.Power_Supply,self.Monitor,self.Who_uses,self.Supplier,self.Create_Date)
-
-
 class Group_Supplier(models.Model):
     Supplier_name = models.CharField('供应商',max_length=100)
     Phone = models.IntegerField('联系方式',max_length=100)
-
-    # def __unicode__(self):
-    #     return u'%s %s' % (self.Supplier_name,self.Phone)
