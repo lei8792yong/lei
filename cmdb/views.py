@@ -23,3 +23,19 @@ def cmdb_list(request):
 
         return render_to_response('cmdb/cmdb_lists.html',kwavs,RequestContext(request))
 
+@require_login
+def cmdb_add(request):
+    if request.method == "GET":
+        Username = request.session.get('user_name')
+        Deptdata = Dept.objects.all()
+        Supplier = Group_Supplier.objects.all()
+
+        kwvars = {
+            'request':request,
+            'Username': Username,
+            'Deptdata': Deptdata,
+            'Supplier': Supplier,
+        }
+
+        return render_to_response('cmdb/cmdb_add.html',kwvars,RequestContext(request))
+

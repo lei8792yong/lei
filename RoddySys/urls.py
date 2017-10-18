@@ -59,5 +59,6 @@ urlpatterns += patterns('domainsys',
 
 urlpatterns += patterns('cmdb',
     url(r'^cmdb/list/$',cmdb_list,name='cmdb_list'),
+    url(r'^cmdb/add/$',cmdb_add,name='cmdb_add'),
 )
 
