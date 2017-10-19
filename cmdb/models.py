@@ -4,7 +4,7 @@ from serversys.models import *
 
 # Create your models here.
 class account(models.Model):
-    Business = models.CharField("所属业务",max_length=100)
+    business = models.CharField("所属业务",max_length=100)
     ip = models.GenericIPAddressField("公网IP",blank=True,null=True)
     inner_ip = models.GenericIPAddressField("内网IP",blank=True,null=True)
     user = models.CharField("用户名",max_length=30)
