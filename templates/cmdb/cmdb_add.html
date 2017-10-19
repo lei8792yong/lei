@@ -156,12 +156,17 @@
                                                     <div class="form-group">
                                                         <label class="col-sm-2 control-label" for="l_applist">部门<span class="red-fonts">*</span> </label>
                                                         <div class="col-sm-6">
-                                                            <select class="form-control m-b" name="dept" >
+                                                            <select class="form-control m-b" name="idc" >
                                                                 {%for i in Deptdata%}
                                                                     <option value="{{i.id}}">{{i.name}}</option>
                                                                 {%endfor%}
                                                             </select>
                                                         </div>
+                                                    </div>
+
+                                                    <div class="hr-line-dashed"></div>
+                                                    <div class="form-group"><label class="col-sm-2 control-label"> 时间<span class="red-fonts"></span> </label>
+                                                        <div class="col-sm-8"><input type="text" class="form-control" name="datetime"  ></div>
                                                     </div>
 
 
@@ -251,21 +256,22 @@
                        $(function(){
                             $("#serveradd").click(function() {
                                 $.post("",
-                                         {servername: $("input[name='servername']").val(),
-                                               externalip: $("input[name='externalip']").val(),
-                                               internalip: $("input[name='internalip']").val(),
-                                               Business: $("select[name='Business']").val(),
-                                               passwd: $("input[name='passwd']").val(),
+                                         {cpu: $("input[name='cpu']").val(),
+                                               fan: $("input[name='fan']").val(),
+                                               motherboard: $("input[name='motherboard']").val(),
+                                               memory: $("select[name='memory']").val(),
+                                               graphics: $("input[name='graphics']").val(),
                                                dept: $("select[name='dept']").val(),
-                                               cpu: $("input[name='cpu']").val(),
-                                               cpumhz: $("input[name='cpumhz']").val(),
-                                               mem: $("input[name='mem']").val(),
-                                               vip: $("input[name='vip']").val(),
-                                               disk: $("input[name='disk']").val(),
-                                               idc: $("select[name='idc']").val(),
-                                               type: $("select[name='type']").val(),
-                                               system: $("select[name='system']").val(),
+                                               hard_disk1: $("input[name='hard_disk1']").val(),
+                                               keyboard: $("input[name='keyboard']").val(),
+                                               chassis: $("input[name='chassis']").val(),
+                                               power_Supply: $("input[name='power_Supply']").val(),
+                                               monitor: $("input[name='monitor']").val(),
+                                               who_uses: $("select[name='who_uses']").val(),
+                                               price: $("select[name='price']").val(),
+                                               supplier: $("select[name='supplier']").val(),
                                                desc: $("input[name='description']").val(),
+                                               datetime: $("input[name='datetime']").val(),
                                                csrfmiddlewaretoken: '{{ csrf_token }}'},
                                          function (data) {
                                             $("#getdata").html(data);
