@@ -3,19 +3,6 @@ from django.db import models
 from serversys.models import *
 
 # Create your models here.
-class account(models.Model):
-    business = models.CharField("所属业务",max_length=100)
-    ip = models.GenericIPAddressField("公网IP",blank=True,null=True)
-    inner_ip = models.GenericIPAddressField("内网IP",blank=True,null=True)
-    user = models.CharField("用户名",max_length=30)
-    passwd = models.CharField("密码",max_length=200)
-    port = models.CharField("端口",max_length=30)
-    landing_mode = models.CharField("登陆方式",max_length=30)
-    create_date = models.DateTimeField('创建时间')
-
-    def __unicode__(self):
-        return self.SN
-
 class cmdb(models.Model):
     cpu = models.CharField('CPU',max_length=100)
     fan = models.CharField('风扇',max_length=100)
@@ -35,8 +22,12 @@ class cmdb(models.Model):
     comment = models.TextField(blank=True, null=True,max_length=500)
 
     def __unicode__(self):
-        return self.SN
+        return self.cpu
 
 class group_supplier(models.Model):
     supplier_name = models.CharField('供应商',max_length=100)
     phone = models.IntegerField('联系方式',max_length=100)
+
+    def __unicode__(self):
+        return self.supplier_name
+    
