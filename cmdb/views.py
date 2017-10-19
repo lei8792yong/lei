@@ -61,5 +61,8 @@ def cmdb_add(request):
 
         p=cmdb(Cpu=cpu,Fan=fan,Motherboard=motherboard,Memory=memory,Graphics=graphics,Hard_disk1=hard_disk1,Keyboard=keyboard,
                Chassis=chassis,Power_Supply=power_supply,Monitor=monitor,Who_uses=who_uses,Price=price,Supplier=supplier,dept=deptname,comment=description,Create_Date=datetime)
+        p.save()
+        return HttpResponse(u'添加成功')
+
 
 
