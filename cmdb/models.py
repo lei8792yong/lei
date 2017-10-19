@@ -29,7 +29,7 @@ class cmdb(models.Model):
     monitor = models.CharField('显示器',max_length=100)
     who_uses = models.CharField('使用者',max_length=100)
     price = models.IntegerField('采购价',max_length=100)
-    supplier = models.ForeignKey('Group_Supplier')         #供应商
+    supplier = models.ForeignKey('group_supplier')         #供应商
     dept = models.ForeignKey(Dept, null=True, blank=True)  #部门
     create_Date = models.DateTimeField('创建时间')
     comment = models.TextField(blank=True, null=True,max_length=500)
