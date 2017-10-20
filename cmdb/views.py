@@ -66,8 +66,17 @@ def cmdb_add(request):
         return HttpResponse(u'添加成功')
 
 def cmdb_supplier(request):
-    if request.method = "GET":
+    if request.method == "GET":
         Username = request.session.get('user_name')
+        Supplier = group_supplier.objects.all()
+
+        kwvars = {
+            'request':request,
+            'Username':Username,
+            'Supplier':Supplier,
+        }
+
+        render_to_response('cmdb/supplier_list.html',kwvars,RequestContext(request))
 
 
 
