@@ -26,7 +26,7 @@ class cmdb(models.Model):
 
 class group_supplier(models.Model):
     supplier_name = models.CharField('供应商',max_length=100)
-    phone = models.IntegerField('联系方式',max_length=100)
+    phone = models.IntegerField('联系方式',max_length=30)
 
     def __unicode__(self):
         return self.supplier_name
