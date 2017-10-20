@@ -62,8 +62,9 @@
                             $("#postset").click(function() {
                                 $.post("",
                                          {dept_name: $("input[name='dept_name']").val(),
-                                             dept_phone:$("input[name='dept_phone]").val(),
                                                csrfmiddlewaretoken: '{{ csrf_token }}'},
+                                        {dept_phone: $("input[name='dept_phone]").val(),
+                                                csrfmiddlewaretoken: '{{ csrf_token }}'},
                                          function (data) {
                                             $("#getdata").html(data);
                                             $('#myModal').modal('show');
