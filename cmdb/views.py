@@ -65,6 +65,9 @@ def cmdb_add(request):
         p.save()
         return HttpResponse(u'添加成功')
 
+def cmdb_supplier(request):
+    if request.method = "GET":
+        Username = request.session.get('user_name')
 
 
 
