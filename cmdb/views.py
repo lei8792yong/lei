@@ -65,6 +65,7 @@ def cmdb_add(request):
         p.save()
         return HttpResponse(u'添加成功')
 
+@require_login
 def supplier_list(request):
     if request.method == "GET":
         Username = request.session.get('user_name')
@@ -76,7 +77,7 @@ def supplier_list(request):
             'Supplier':Supplier,
         }
 
-        render_to_response('cmdb/supplier_list.html',kwvars,RequestContext(request))
+        return render_to_response('cmdb/supplier_list.html',kwvars,RequestContext(request))
 
 
 
