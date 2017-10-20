@@ -87,4 +87,7 @@ def supplier_add(request):
             'Username':Username,
         }
 
-        return render_to_response('cmdb/')
+        return render_to_response('cmdb/supplier_add.html')
+
+    if request.method == "POST":
+
