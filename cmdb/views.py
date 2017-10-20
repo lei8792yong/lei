@@ -65,7 +65,7 @@ def cmdb_add(request):
         p.save()
         return HttpResponse(u'添加成功')
 
-def cmdb_supplier(request):
+def supplier_list(request):
     if request.method == "GET":
         Username = request.session.get('user_name')
         Supplier = group_supplier.objects.all()
