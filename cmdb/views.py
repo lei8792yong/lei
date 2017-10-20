@@ -90,4 +90,16 @@ def supplier_add(request):
         return render_to_response('cmdb/supplier_add.html')
 
     if request.method == "POST":
+        supplisr_name = request.POST.get('dept_name')
+        supplier_phone = request.POST.get('dept_phone')
+
+        if group_supplier.objects.filter(supplier_name=supplisr_name):
+            Warrmess = u'该供应商已存在'
+            return HttpResponse(Warning)
+        else:
+            p = group_supplier(supplisr_name=supplisr_name,phone=supplier_phone)
+            p.save()
+
+            return HttpResponse(u'供应商添加成功')
+
 
