@@ -98,7 +98,7 @@ def supplier_add(request):
             Warrmess = u'该供应商已存在'
             return HttpResponse(Warning)
         else:
-            p = group_supplier(supplisr_name=supplier_name,phone=supplier_phone)
+            p = group_supplier(supplier_name=supplier_name,phone=supplier_phone)
             p.save()
 
             return HttpResponse(u'供应商添加成功')
