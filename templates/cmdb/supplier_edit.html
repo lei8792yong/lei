@@ -18,7 +18,7 @@
                         </div>
                         <div  class="panel-body">
 
-                    <form class="form-horizontal nice-validator n-yellow" method="post" action="/cmdb/supplier/edit/{{edid}}"  >
+                    <form class="form-horizontal nice-validator n-yellow" method="post" action="/cmdb/supplier/edit/{{suid}}"  >
                         {% for i in getsupplier %}
                         <div class="form-group"><label class="col-sm-2 control-label"> 供应商 <span class="red-fonts"></span></label>
                             <div class="col-sm-6"><input type="text" class="form-control" name="supplier_name" value="{{i.supplier_name}}" required></div>
