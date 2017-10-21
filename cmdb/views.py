@@ -88,7 +88,7 @@ def supplier_add(request):
             'Username':Username,
         }
 
-        return render_to_response('cmdb/supplier_add.html')
+        return render_to_response('cmdb/supplier_add.html',kwvars,RequestContext(request))
 
     if request.method == "POST":
         supplisr_name = request.POST.get('dept_name')
