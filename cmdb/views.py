@@ -109,6 +109,30 @@ def supplier_del(request,id):
     return HttpResponse(u'供应商删除成功!!')
 
 
+@require_login
+def supplier_edit(request,suid):
+    if request.method == "GET":
+        getsupplier = request.POST.get(id=suid)
+        Username = request.session.get('user_name')
+        kwvars = {
+            'request':request,
+            'Username':Username,
+            'suid':suid,
+            'getsupplier':getsupplier,
+        }
+    return render_to_response('cmdb/supplier_edit.html',kwvars,RequestContext(request))
+
+    if request.method == "POST":
+        get_supplier_name = request.POST.get('supplier_name')
+        get_supplier_phone = request.POST.get('supplier_phone')
+
+        if group_supplier.objects.filter(id=suid,supplier_name=get_supplier_name,phone=get_supplier_phone):
+            getsupplier = group_supplier.objects.get(id=suid)
+            getsupplier.name = request.POST.get('supplier_name')
+            getsupplier.phone = request.POST.get('get_supplier_phone')
+            getsupplier.save()
+            return HttpResponse(u"供应商修改成功!!!")
+
 
 
 
