@@ -93,6 +93,7 @@ def supplier_add(request):
     if request.method == "POST":
         supplisr_name = request.POST.get('dept_name')
         supplier_phone = request.POST.get('dept_phone')
+        print supplisr_name,supplier_phone
 
         if group_supplier.objects.filter(supplier_name=supplisr_name):
             Warrmess = u'该供应商已存在'
