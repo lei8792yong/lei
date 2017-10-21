@@ -62,5 +62,6 @@ urlpatterns += patterns('cmdb',
     url(r'^cmdb/add/$',cmdb_add,name='cmdb_add'),
     url(r'^cmdb/supplier/list/$',supplier_list,name='supplier_list'),
     url(r'^cmdb/supplier/add',supplier_add,name='supplier_add'),
+    url(r'^cmdb/supplier/del',supplier_del,name='supplier_del'),
 )
 

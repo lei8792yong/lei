@@ -103,4 +103,12 @@ def supplier_add(request):
 
             return HttpResponse(u'供应商添加成功')
 
+@require_login
+def supplier_del(request,id):
+    group_supplier.objects.get(id=id).delete()
+    return HttpResponse(u'供应商删除成功!!')
+
+
+
+
 

@@ -118,7 +118,7 @@
                              <script>
                                function clickurl(url){
                                     $("#postdel").click(function() {
-                                        $.get("/account/dept/del/"+url,
+                                        $.get("/cmdb/supplier/del/"+url,
                                                  function (data) {
                                                     $('#myModal').modal('hide')
                                                     $("#getdata").html(data);
