@@ -112,7 +112,7 @@ def supplier_del(request,id):
 @require_login
 def supplier_edit(request,suid):
     if request.method == "GET":
-        getsupplier = request.POST.get(id=suid)
+        getsupplier = group_supplier.objects.filter(id=suid)
         Username = request.session.get('user_name')
         kwvars = {
             'request':request,
@@ -121,6 +121,7 @@ def supplier_edit(request,suid):
             'getsupplier':getsupplier,
         }
     return render_to_response('cmdb/supplier_edit.html',kwvars,RequestContext(request))
+
 
     if request.method == "POST":
         get_supplier_name = request.POST.get('supplier_name')
