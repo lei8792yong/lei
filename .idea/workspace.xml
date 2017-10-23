@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3357a8a2-e259-43c0-a90c-b53ebaa81315" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmdb/views.py" afterPath="$PROJECT_DIR$/cmdb/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cmdb/supplier_edit.html" afterPath="$PROJECT_DIR$/templates/cmdb/supplier_edit.html" />
     </list>
     <ignored path="Miniwan.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,8 +70,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/account/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="201" column="47" selection-start-line="201" selection-start-column="47" selection-end-line="201" selection-end-column="47" />
+            <state relative-caret-position="317">
+              <caret line="195" column="0" selection-start-line="195" selection-start-column="0" selection-end-line="200" selection-end-column="9" />
               <folding>
                 <element signature="e#13#70#0" expanded="true" />
               </folding>
@@ -84,8 +82,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cmdb/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
-              <caret line="124" column="4" selection-start-line="124" selection-start-column="4" selection-end-line="124" selection-end-column="4" />
+            <state relative-caret-position="533">
+              <caret line="122" column="9" selection-start-line="122" selection-start-column="9" selection-end-line="122" selection-end-column="9" />
               <folding>
                 <element signature="e#22#57#0" expanded="true" />
               </folding>
@@ -1059,16 +1057,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/account/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="201" column="47" selection-start-line="201" selection-start-column="47" selection-end-line="201" selection-end-column="47" />
-          <folding>
-            <element signature="e#13#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/cmdb/supplier_edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -1077,10 +1065,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/account/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="195" column="0" selection-start-line="195" selection-start-column="0" selection-end-line="200" selection-end-column="9" />
+          <folding>
+            <element signature="e#13#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cmdb/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="124" column="4" selection-start-line="124" selection-start-column="4" selection-end-line="124" selection-end-column="4" />
+        <state relative-caret-position="533">
+          <caret line="122" column="9" selection-start-line="122" selection-start-column="9" selection-end-line="122" selection-end-column="9" />
           <folding>
             <element signature="e#22#57#0" expanded="true" />
           </folding>
