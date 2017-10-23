@@ -122,4 +122,4 @@ def supplier_edit(request,sid):
         }
 
         return render_to_response('cmdb/supplier_edit.html',kwvars,RequestContext(request))
-    
+
