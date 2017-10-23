@@ -124,10 +124,7 @@ def supplier_edit(request,sid):
         return render_to_response('cmdb/supplier_edit.html',kwvars,RequestContext(request))
 
     if request.method == 'POST':
-        Getsuppname = request.POST.get('supplier_name')
-        if group_supplier.objects.filter(supplier_name=Getsuppname,id=sid):
-
-            Getsupp=group_supplier.objects.get(id=sid)
-            Getsupp.name=request.POST.get('supplier_name')
-            Getsupp.save()
-            return HttpResponse(u"供应商修改成功!!!")
+        Getsupp=group_supplier.objects.get(id=sid)
+        Getsupp.name=request.POST.get('supplier_name')
+        Getsupp.save()
+        return HttpResponse(u"供应商修改成功!!!")
