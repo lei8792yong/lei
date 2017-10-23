@@ -125,7 +125,7 @@ def supplier_edit(request,sid):
 
     if request.method == 'POST':
 
-        Getsupp_name = group_supplier.objects.get(id=sid)
+        Getsupp_name = group_supplier.objects.get('supplier_name')
 
         if group_supplier.objects.filter(id=sid,supplier_name=Getsupp_name):
             Getsupp = group_supplier.objects.get(id=sid)
@@ -133,7 +133,7 @@ def supplier_edit(request,sid):
             Getsupp.save()
             return HttpResponse(u"供应商修改成功!!!")
 
-        if group_supplier.objects.filter(supplier_name=Getsupp_name):
+        if group_supplier.objects.filter(supplier_name=Getsupp_name,):
             return HttpResponse(u'供应商已经存在，请重新输入')
         else:
             Getsupp = group_supplier.objects.get(id=sid)
