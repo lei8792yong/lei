@@ -121,7 +121,8 @@ def supplier_edit(request,suid):
             'Suid': suid,
             'username': Username,
         }
-    return render_to_response('cmdb/supplier_edit.html',kwvars,RequestContext(request))
+        print kwvars
+    return render_to_response('cmdb/supplier_edit.html', kwvars ,RequestContext(request))
 
 
 
