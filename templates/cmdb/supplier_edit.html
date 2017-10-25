@@ -70,7 +70,7 @@
                             $("#postset").click(function() {
                                 $.post("",
                                          {supplier_name: $("input[name='supplier_name']").val(),
-                                         
+
                                                csrfmiddlewaretoken: '{{ csrf_token }}'},
                                          function (data) {
                                             $("#getdata").html(data);
