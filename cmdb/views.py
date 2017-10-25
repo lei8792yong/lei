@@ -125,7 +125,7 @@ def supplier_edit(request,sid):
 
     if request.method == 'POST':
 
-        print "----->"
+        print "----->",request.POST
         Getsupp_name = request.POST.get('supplier_name')
         # Getsupp_phone = request.POST.get('supplier_phone')
 
