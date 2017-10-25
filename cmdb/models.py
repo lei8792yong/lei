@@ -1,6 +1,8 @@
 # _*_ coding:utf-8 _*_
 from django.db import models
 from serversys.models import *
+from django.utils import timezone
+
 
 # Create your models here.
 class cmdb(models.Model):
