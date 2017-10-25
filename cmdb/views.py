@@ -128,6 +128,8 @@ def supplier_edit(request,sid):
         Getsupp_name = group_supplier.objects.get('supplier_name')
         Getsupp_phone = group_supplier.objects.get('supplier_phone')
 
+        print Getsupp_name,Getsupp_phone
+
         if group_supplier.objects.filter(id=sid,supplier_name=Getsupp_name,phone=Getsupp_phone):
             Getsupp = group_supplier.objects.get(id=sid)
             Getsupp.supplier_name = request.POST.get('supplier_name')
