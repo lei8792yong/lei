@@ -69,7 +69,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmdb/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="655">
@@ -81,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="supplier_edit.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="supplier_edit.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/cmdb/supplier_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="562">
-              <caret line="67" column="60" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="60" />
+            <state relative-caret-position="-152">
+              <caret line="23" column="100" selection-start-line="23" selection-start-column="100" selection-end-line="23" selection-end-column="100" />
               <folding />
             </state>
           </provider>
@@ -140,8 +140,8 @@
         <option value="$PROJECT_DIR$/templates/cmdb/supplier_list.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/cmdb/models.py" />
-        <option value="$PROJECT_DIR$/templates/cmdb/supplier_edit.html" />
         <option value="$PROJECT_DIR$/cmdb/views.py" />
+        <option value="$PROJECT_DIR$/templates/cmdb/supplier_edit.html" />
       </list>
     </option>
   </component>
@@ -1079,14 +1079,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cmdb/supplier_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="67" column="60" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmdb/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="655">
@@ -1094,6 +1086,14 @@
           <folding>
             <element signature="e#24#59#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cmdb/supplier_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-152">
+          <caret line="23" column="100" selection-start-line="23" selection-start-column="100" selection-end-line="23" selection-end-column="100" />
+          <folding />
         </state>
       </provider>
     </entry>
