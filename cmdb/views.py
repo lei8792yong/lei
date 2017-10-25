@@ -123,13 +123,8 @@ def supplier_edit(request,sid):
 
         return render_to_response('cmdb/supplier_edit.html',kwvars,RequestContext(request))
 
-    if request.method == 'POST':
-
-        print "----->",type(request.POST)
-        Getsupp_name = request.POST.get('supplier_name')
-        # Getsupp_phone = request.POST.get('supplier_phone')
-
-        print Getsupp_name
+    if request.method == "POST":
+        print request.POST.get('supplier_name')
 
         # if group_supplier.objects.filter(id=sid,supplier_name=Getsupp_name,phone=Getsupp_phone):
         #     Getsupp = group_supplier.objects.get(id=sid)
