@@ -124,40 +124,6 @@ def supplier_edit(request,sid):
         return render_to_response('cmdb/supplier_edit.html',kwvars,RequestContext(request))
 
     if request.method == "POST":
-        print request.POST.get('supplier_name')
 
-        # if group_supplier.objects.filter(id=sid,supplier_name=Getsupp_name,phone=Getsupp_phone):
-        #     Getsupp = group_supplier.objects.get(id=sid)
-        #     Getsupp.supplier_name = request.POST.get('supplier_name')
-        #     Getsupp.phone = request.POST.get('supplier_phone')
-        #     Getsupp.save()
-        #     return HttpResponse(u"供应商修改成功!!!")
-        #
-        # if group_supplier.objects.filter(supplier_name=Getsupp_name,phone=Getsupp_phone):
-        #     return HttpResponse(u'供应商已经存在，请重新输入')
-        # else:
-        #     Getsupp = group_supplier.objects.get(id=sid,supplier_name=Getsupp_name,phone=Getsupp_phone)
-        #     Getsupp.supplier_name = request.POST.get('supplier_name')
-        #     Getsupp.phone = request.POST.get('supplier_phone')
-        #     Getsupp.save()
-        #     return HttpResponse(u"供应商修改成功!!!")
+        return HttpResponse('ok')
 
-        return HttpResponse(u'ok')
-
-    # if request.method == 'POST':
-    #     GetDeptname=request.POST.get('dept_name')
-    #
-    #     if Dept.objects.filter(name=GetDeptname,id=deid):
-    #
-    #         GetDept=Dept.objects.get(id=deid)
-    #         GetDept.name=request.POST.get('dept_name')
-    #         GetDept.save()
-    #         return HttpResponse(u"部门修改成功!!!")
-    #
-    #     if Dept.objects.filter(name=GetDeptname):
-    #         return HttpResponse(u"部门已经存在，请重新输入!!!")
-    #     else:
-    #         GetDept=Dept.objects.get(id=deid)
-    #         GetDept.name=request.POST.get('dept_name')
-    #         GetDept.save()
-    #         return HttpResponse(u"部门修改成功!!!")
