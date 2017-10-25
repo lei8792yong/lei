@@ -25,8 +25,8 @@ class cmdb(models.Model):
         return self.cpu
 
 class group_supplier(models.Model):
-    supplier_name = models.CharField('供应商',max_length=100)
-    phone = models.CharField('联系方式',max_length=20)
+    supplier_name = models.CharField(max_length=150)
+    phone = models.CharField(max_length=20)
 
     def __unicode__(self):
         return self.supplier_name
