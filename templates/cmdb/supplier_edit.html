@@ -14,13 +14,13 @@
                 <div class="col-lg-8">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            ?????
+                            供应商修改
                         </div>
                         <div  class="panel-body">
 
                     <form class="form-horizontal nice-validator n-yellow" method="post" action="/cmdb/supplier/edit/{{sid}}"  >
                         {% for i in Getsu %}
-                        <div class="form-group"><label class="col-sm-2 control-label"> ??? <span class="red-fonts"></span></label>
+                        <div class="form-group"><label class="col-sm-2 control-label"> 供应商 <span class="red-fonts"></span></label>
                             <div class="col-sm-6"><input type="text" class="form-control" name="supp_edit_name" value="{{i.supplier_name}}" required></div>
                         </div>
 
@@ -30,8 +30,8 @@
                         <div class="hr-line-dashed"></div>
                         <div class="form-group">
                             <div class="col-sm-4 col-sm-offset-5">
-                                <button type="reset"  class="btn btn-white"> ?? </button>
-                                <button type="button" class="btn btn-primary" id="postset"> ?? </button>
+                                <button type="reset"  class="btn btn-white"> 重置</button>
+                                <button type="button" class="btn btn-primary" id="postset"> 提交 </button>
                             </div>
                         </div>
                         {% csrf_token %}
@@ -53,7 +53,7 @@
 
                             <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">??</button>
-                                    <a class="btn btn-primary" href="/cmdb/supplier/list/">??</a>
+                                    <a class="btn btn-primary" href="/cmdb/supplier/list/">确认</a>
                             </div>
 
                         </div>
