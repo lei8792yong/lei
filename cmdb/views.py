@@ -126,25 +126,27 @@ def supplier_edit(request,sid):
     if request.method == 'POST':
 
         Getsupp_name = request.POST.get('supplier_name')
-        Getsupp_phone = request.POST.get('supplier_phone')
+        # Getsupp_phone = request.POST.get('supplier_phone')
 
-        print Getsupp_name,Getsupp_phone
+        print Getsupp_name
 
-        if group_supplier.objects.filter(id=sid,supplier_name=Getsupp_name,phone=Getsupp_phone):
-            Getsupp = group_supplier.objects.get(id=sid)
-            Getsupp.supplier_name = request.POST.get('supplier_name')
-            Getsupp.phone = request.POST.get('supplier_phone')
-            Getsupp.save()
-            return HttpResponse(u"供应商修改成功!!!")
+        # if group_supplier.objects.filter(id=sid,supplier_name=Getsupp_name,phone=Getsupp_phone):
+        #     Getsupp = group_supplier.objects.get(id=sid)
+        #     Getsupp.supplier_name = request.POST.get('supplier_name')
+        #     Getsupp.phone = request.POST.get('supplier_phone')
+        #     Getsupp.save()
+        #     return HttpResponse(u"供应商修改成功!!!")
+        #
+        # if group_supplier.objects.filter(supplier_name=Getsupp_name,phone=Getsupp_phone):
+        #     return HttpResponse(u'供应商已经存在，请重新输入')
+        # else:
+        #     Getsupp = group_supplier.objects.get(id=sid,supplier_name=Getsupp_name,phone=Getsupp_phone)
+        #     Getsupp.supplier_name = request.POST.get('supplier_name')
+        #     Getsupp.phone = request.POST.get('supplier_phone')
+        #     Getsupp.save()
+        #     return HttpResponse(u"供应商修改成功!!!")
 
-        if group_supplier.objects.filter(supplier_name=Getsupp_name,phone=Getsupp_phone):
-            return HttpResponse(u'供应商已经存在，请重新输入')
-        else:
-            Getsupp = group_supplier.objects.get(id=sid,supplier_name=Getsupp_name,phone=Getsupp_phone)
-            Getsupp.supplier_name = request.POST.get('supplier_name')
-            Getsupp.phone = request.POST.get('supplier_phone')
-            Getsupp.save()
-            return HttpResponse(u"供应商修改成功!!!")
+        return HttpResponse(u'ok')
 
     # if request.method == 'POST':
     #     GetDeptname=request.POST.get('dept_name')
