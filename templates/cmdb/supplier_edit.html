@@ -21,12 +21,8 @@
                     <form class="form-horizontal nice-validator n-yellow" method="post" action="/cmdb/supplier/edit/{{sid}}"  >
                         {% for i in Getsu %}
                         <div class="form-group"><label class="col-sm-2 control-label"> 供应商 <span class="red-fonts"></span></label>
-                            <div class="col-sm-6"><input type="text" class="form-control" name="supplier_name" value="{{i.supplier_name}}" required></div>
+                            <div class="col-sm-6"><input type="text" class="form-control" name="dept_name" value="{{i.supplier_name}}" required></div>
                         </div>
-                        <div class="form-group"><label class="col-sm-2 control-label"> 联系方式 <span class="red-fonts"></span></label>
-                            <div class="col-sm-6"><input type="text" class="form-control" name="supplier_phone" value="{{i.phone}}" required></div>
-                        </div>
-
 
 
                         {% endfor %}
@@ -69,8 +65,7 @@
                        $(function(){
                             $("#postset").click(function() {
                                 $.post("",
-                                         {supplier_edit_name: $("input[name='supplier_name']").val(),
-
+                                         {dept_name: $("input[name='dept_name']").val(),
                                                csrfmiddlewaretoken: '{{ csrf_token }}'},
                                          function (data) {
                                             $("#getdata").html(data);
