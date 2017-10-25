@@ -28,5 +28,5 @@ class group_supplier(models.Model):
     supplier_name = models.CharField(max_length=150)
     phone = models.CharField(max_length=20)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.supplier_name
