@@ -2,68 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3357a8a2-e259-43c0-a90c-b53ebaa81315" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/bootstrap/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/bootstrap/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/bootstrap/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/bootstrap/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/css/bootstrap-datetimepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/css/bootstrap-datetimepicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/jquery/jquery-1.8.3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/bootstrap-datetimepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/bootstrap-datetimepicker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.az.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.bn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.ee.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.he.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.hy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.is.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.ka.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.ko.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.lv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.ms.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.nb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.no.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.pt-BR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.ro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.rs-latin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.rs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.sl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.sw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.th.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.ua.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.uk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.zh-CN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.zh-TW.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cmdb/cmdb_add.html" afterPath="$PROJECT_DIR$/templates/cmdb/cmdb_add.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmdb/models.py" afterPath="$PROJECT_DIR$/cmdb/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmdb/views.py" afterPath="$PROJECT_DIR$/cmdb/views.py" />
     </list>
     <ignored path="Miniwan.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -116,22 +57,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmdb/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="628">
-              <caret line="141" column="48" selection-start-line="140" selection-start-column="63" selection-end-line="141" selection-end-column="48" />
-              <folding>
-                <element signature="e#24#59#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cmdb_add.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cmdb_add.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/cmdb/cmdb_add.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
+            <state relative-caret-position="-193">
               <caret line="154" column="132" selection-start-line="154" selection-start-column="132" selection-end-line="154" selection-end-column="132" />
               <folding />
             </state>
@@ -158,11 +87,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmdb/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="63" column="166" selection-start-line="63" selection-start-column="166" selection-end-line="63" selection-end-column="166" />
+              <folding>
+                <element signature="e#24#59#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cmdb/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="418">
+              <caret line="22" column="60" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
               <folding>
                 <element signature="e#23#51#0" expanded="true" />
               </folding>
@@ -186,9 +127,9 @@
         <option value="$PROJECT_DIR$/templates/cmdb/supplier_list.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/cmdb/supplier_edit.html" />
-        <option value="$PROJECT_DIR$/cmdb/views.py" />
-        <option value="$PROJECT_DIR$/cmdb/models.py" />
         <option value="$PROJECT_DIR$/templates/cmdb/cmdb_add.html" />
+        <option value="$PROJECT_DIR$/cmdb/models.py" />
+        <option value="$PROJECT_DIR$/cmdb/views.py" />
       </list>
     </option>
   </component>
@@ -1061,26 +1002,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmdb/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="141" column="48" selection-start-line="140" selection-start-column="63" selection-end-line="141" selection-end-column="48" />
-          <folding>
-            <element signature="e#24#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmdb/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="e#23#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/datatime/bootstrap/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1131,9 +1052,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/cmdb/cmdb_add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
+        <state relative-caret-position="-193">
           <caret line="154" column="132" selection-start-line="154" selection-start-column="132" selection-end-line="154" selection-end-column="132" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmdb/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="63" column="166" selection-start-line="63" selection-start-column="166" selection-end-line="63" selection-end-column="166" />
+          <folding>
+            <element signature="e#24#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmdb/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="60" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
+          <folding>
+            <element signature="e#23#51#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -20,7 +20,7 @@ class cmdb(models.Model):
     price = models.IntegerField('采购价',max_length=100)
     supplier = models.ForeignKey('group_supplier')         #供应商
     dept = models.ForeignKey(Dept, null=True, blank=True)  #部门
-    create_Date = models.DateTimeField()
+    create_Date = models.DateTimeField(default=timezone.now)
     comment = models.TextField(blank=True, null=True,max_length=500)
 
     def __unicode__(self):
