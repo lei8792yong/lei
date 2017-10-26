@@ -61,19 +61,19 @@
                     </div>
 
 
-                  <script>
-                       $(function(){
-                            $("#postset").click(function() {
-                                $.post("",
-                                         {dept_aname: $("input[name='supp_edit_name']").val(),
-                                               csrfmiddlewaretoken: '{{ csrf_token }}'},
-                                         function (data) {
-                                            $("#getdata").html(data);
-                                            $('#myModal').modal('show');
-                                        });
-                            });
-                        });
-                  </script>
+{#                  <script>#}
+{#                       $(function(){#}
+{#                            $("#postset").click(function() {#}
+{#                                $.post("",#}
+{#                                         {dept_aname: $("input[name='supp_edit_name']").val(),#}
+{#                                               csrfmiddlewaretoken: '{{ csrf_token }}'},#}
+{#                                         function (data) {#}
+{#                                            $("#getdata").html(data);#}
+{#                                            $('#myModal').modal('show');#}
+{#                                        });#}
+{#                            });#}
+{#                        });#}
+{#                  </script>#}
 
 
                 </div>
