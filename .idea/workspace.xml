@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3357a8a2-e259-43c0-a90c-b53ebaa81315" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmdb/models.py" afterPath="$PROJECT_DIR$/cmdb/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmdb/views.py" afterPath="$PROJECT_DIR$/cmdb/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cmdb/cmdb_add.html" afterPath="$PROJECT_DIR$/templates/cmdb/cmdb_add.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cmdb/cmdb_lists.html" afterPath="$PROJECT_DIR$/templates/cmdb/cmdb_lists.html" />
     </list>
     <ignored path="Miniwan.iws" />
@@ -49,28 +46,8 @@
       <file leaf-file-name="cmdb_lists.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/cmdb/cmdb_lists.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="73" column="54" selection-start-line="73" selection-start-column="54" selection-end-line="73" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="account_api.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/account/account_api.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+            <state relative-caret-position="543">
+              <caret line="81" column="59" selection-start-line="81" selection-start-column="59" selection-end-line="81" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -909,14 +886,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/datatime/js/locales/bootstrap-datetimepicker.ar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -991,16 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmdb/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
-          <folding>
-            <element signature="e#24#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmdb/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -1011,10 +970,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmdb/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+          <folding>
+            <element signature="e#24#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/cmdb/cmdb_lists.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="73" column="54" selection-start-line="73" selection-start-column="54" selection-end-line="73" selection-end-column="54" />
+        <state relative-caret-position="543">
+          <caret line="81" column="59" selection-start-line="81" selection-start-column="59" selection-end-line="81" selection-end-column="59" />
           <folding />
         </state>
       </provider>
