@@ -136,7 +136,7 @@ def supplier_edit(request,sid):
             GetSept.save()
             return HttpResponse(u"供应商修改成功!!!")
 
-        if Dept.objects.filter(name=GetSuppname):
+        if group_supplier.objects.filter(name=GetSuppname):
             return HttpResponse(u"供应商已经存在，请重新输入!!!")
         else:
             GetSept=Dept.objects.get(id=sid)
