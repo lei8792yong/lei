@@ -124,8 +124,22 @@ def supplier_edit(request,sid):
         return render_to_response('cmdb/supplier_edit.html',kwvars,RequestContext(request))
 
     if request.method == 'POST':
-        supplier_edit_name = request.POST.get('Supp_edit_name')
-        print supplier_edit_name
+        if is_common_user(request):
+            return HttpResponse(u"普通用户没有权限!!!")
 
-        return HttpResponse('ok')
+        GetSuppname=request.POST.get('Supp_edit_name')
 
+        if group_supplier.objects.filter(supplier_name=GetSuppname,id=sid):
+
+            GetSept=group_supplier.objects.get(id=sid)
+            GetSept.name=request.POST.get('Supp_edit_name')
+            GetSept.save()
+            return HttpResponse(u"供应商修改成功!!!")
+
+        if Dept.objects.filter(name=GetSuppname):
+            return HttpResponse(u"供应商已经存在，请重新输入!!!")
+        else:
+            GetSept=Dept.objects.get(id=sid)
+            GetSept.name=request.POST.get('Supp_edit_name')
+            GetSept.save()
+            return HttpResponse(u"供应商修改成功!!!")
