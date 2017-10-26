@@ -128,11 +128,13 @@ def supplier_edit(request,sid):
             return HttpResponse(u"普通用户没有权限!!!")
 
         GetSuppname=request.POST.get('Supp_edit_name')
+        GetSuppphone=request.POST.get('Supp_edit_phone')
 
-        if group_supplier.objects.filter(supplier_name=GetSuppname,id=sid):
+        if group_supplier.objects.filter(supplier_name=GetSuppname,phone=GetSuppphone,id=sid):
 
             GetSept=group_supplier.objects.get(id=sid)
             GetSept.supplier_name=request.POST.get('Supp_edit_name')
+            GetSept.phone=request.POST.get('Supp_edit_phone')
             GetSept.save()
             return HttpResponse(u"供应商修改成功 1")
 
@@ -141,5 +143,7 @@ def supplier_edit(request,sid):
         else:
             GetSept=group_supplier.objects.get(id=sid)
             GetSept.supplier_name=request.POST.get('Supp_edit_name')
+            GetSept.phone=request.POST.get('Supp_edit_phone')
             GetSept.save()
             return HttpResponse(u"供应商修改成功 2")
+

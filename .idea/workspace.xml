@@ -58,7 +58,7 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/account/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
+            <state relative-caret-position="-44">
               <caret line="203" column="0" selection-start-line="203" selection-start-column="0" selection-end-line="222" selection-end-column="45" />
               <folding>
                 <element signature="e#13#70#0" expanded="true" />
@@ -71,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/cmdb/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="723">
-              <caret line="142" column="33" selection-start-line="142" selection-start-column="33" selection-end-line="142" selection-end-column="33" />
+              <caret line="145" column="59" selection-start-line="145" selection-start-column="59" selection-end-line="145" selection-end-column="59" />
               <folding>
                 <element signature="e#24#59#0" expanded="true" />
               </folding>
@@ -82,8 +82,8 @@
       <file leaf-file-name="supplier_edit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/cmdb/supplier_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="69" column="56" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="56" />
+            <state relative-caret-position="581">
+              <caret line="70" column="60" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="60" />
               <folding>
                 <element signature="e#2439#2446#0#HTML" expanded="true" />
               </folding>
@@ -104,8 +104,8 @@
       <file leaf-file-name="account_api.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/account/account_api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+            <state relative-caret-position="298">
+              <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -1005,14 +1005,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/account/account_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/serversys/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1069,16 +1061,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/account/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="203" column="0" selection-start-line="203" selection-start-column="0" selection-end-line="222" selection-end-column="45" />
-          <folding>
-            <element signature="e#13#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmdb/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
@@ -1089,10 +1071,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/account/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="203" column="0" selection-start-line="203" selection-start-column="0" selection-end-line="222" selection-end-column="45" />
+          <folding>
+            <element signature="e#13#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/account/account_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/cmdb/supplier_edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="69" column="56" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="56" />
+        <state relative-caret-position="581">
+          <caret line="70" column="60" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="60" />
           <folding>
             <element signature="e#2439#2446#0#HTML" expanded="true" />
           </folding>
@@ -1102,7 +1102,7 @@
     <entry file="file://$PROJECT_DIR$/cmdb/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="723">
-          <caret line="142" column="33" selection-start-line="142" selection-start-column="33" selection-end-line="142" selection-end-column="33" />
+          <caret line="145" column="59" selection-start-line="145" selection-start-column="59" selection-end-line="145" selection-end-column="59" />
           <folding>
             <element signature="e#24#59#0" expanded="true" />
           </folding>
