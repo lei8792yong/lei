@@ -124,7 +124,7 @@ def supplier_edit(request,sid):
         return render_to_response('cmdb/supplier_edit.html',kwvars,RequestContext(request))
 
     if request.method == 'POST':
-        supplier_edit_name = request.POST.get('dept_name')
+        supplier_edit_name = request.POST.get('dept_aname')
         print supplier_edit_name
 
         return HttpResponse('ok')
