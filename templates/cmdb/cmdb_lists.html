@@ -85,7 +85,7 @@
                                             <td>{{s.price}}</td>
                                             <td>{{s.supplier.supplier_name}}</td>
                                             <td>{{s.dept.name}}</td>
-                                            <td>{{s.create_Date}}</td>
+                                            <td>{{s.create_Date|date:"Y-m-d H:i:s"}}</td>
                                         </tr>
                                     {%endfor%}
 
