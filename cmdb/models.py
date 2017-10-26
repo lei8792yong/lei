@@ -7,7 +7,6 @@ from django.utils import timezone
 # Create your models here.
 class cmdb(models.Model):
     cpu = models.CharField('CPU',max_length=100)
-    fan = models.CharField('风扇',max_length=100)
     motherboard = models.CharField('主板',max_length=100)
     memory = models.CharField('内存条',max_length=100)
     graphics = models.CharField('显卡',max_length=100)
