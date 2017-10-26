@@ -14,7 +14,7 @@ class cmdb(models.Model):
     hard_disk1 = models.CharField('硬盘1',max_length=100)
     keyboard = models.CharField('键盘/鼠标',max_length=100)
     chassis = models.CharField('机箱',max_length=100)
-    power_Supply = models.CharField('电源',max_length=100)
+    power_supply = models.CharField('电源',max_length=100)
     monitor = models.CharField('显示器',max_length=100)
     who_uses = models.CharField('使用者',max_length=100)
     price = models.IntegerField('采购价',max_length=100)
