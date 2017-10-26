@@ -82,8 +82,8 @@
       <file leaf-file-name="cmdb_add.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/cmdb/cmdb_add.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+            <state relative-caret-position="453">
+              <caret line="76" column="110" selection-start-line="76" selection-start-column="110" selection-end-line="76" selection-end-column="110" />
               <folding />
             </state>
           </provider>
@@ -1073,8 +1073,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/cmdb/cmdb_add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+        <state relative-caret-position="453">
+          <caret line="76" column="110" selection-start-line="76" selection-start-column="110" selection-end-line="76" selection-end-column="110" />
           <folding />
         </state>
       </provider>
