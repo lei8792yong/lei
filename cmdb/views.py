@@ -65,6 +65,12 @@ def cmdb_add(request):
         return HttpResponse(u'添加成功')
 
 @require_login
+def cmdb_edit(request):
+    if request.method == 'GET':
+        Username = request.session.get('user_name')
+
+
+@require_login
 def supplier_list(request):
     if request.method == "GET":
         Username = request.session.get('user_name')
