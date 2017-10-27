@@ -65,9 +65,22 @@ def cmdb_add(request):
         return HttpResponse(u'添加成功')
 
 @require_login
-def cmdb_edit(request):
+def cmdb_edit(request,cid):
     if request.method == 'GET':
         Username = request.session.get('user_name')
+        Cmdbdata = cmdb.objects.all(id=cid)
+        Deptdata = Dept.objects.all()
+        Suppdata = group_supplier.objects.all()
+
+        kwvars = {
+            'request':request,
+            'username':Username,
+            'cmdbdata':Cmdbdata,
+            'deptdata':Deptdata,
+            'suppdata':Suppdata,
+        }
+
+        return render_to_response('cmdb/cmdb_edit.html',kwvars,RequestContext(request))
 
 
 @require_login
