@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3357a8a2-e259-43c0-a90c-b53ebaa81315" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cmdb/cmdb_edit.html" afterPath="$PROJECT_DIR$/templates/cmdb/cmdb_edit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cmdb/cmdb_lists.html" afterPath="$PROJECT_DIR$/templates/cmdb/cmdb_lists.html" />
     </list>
     <ignored path="Miniwan.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,18 +26,18 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RoddySys/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="61" column="25" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+            <state relative-caret-position="488">
+              <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cmdb_lists.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cmdb_lists.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/cmdb/cmdb_lists.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1341">
-              <caret line="90" column="102" selection-start-line="90" selection-start-column="102" selection-end-line="90" selection-end-column="102" />
+            <state relative-caret-position="619">
+              <caret line="94" column="46" selection-start-line="94" selection-start-column="46" selection-end-line="94" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -86,8 +86,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmdb/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="70" column="16" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="16" />
+            <state relative-caret-position="526">
+              <caret line="82" column="72" selection-start-line="82" selection-start-column="72" selection-end-line="82" selection-end-column="72" />
               <folding>
                 <element signature="e#24#59#0" expanded="true" />
               </folding>
@@ -95,7 +95,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cmdb_edit.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cmdb_edit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/cmdb/cmdb_edit.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="3002">
@@ -120,8 +120,8 @@
       <file leaf-file-name="server_edit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/serversys/server_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="151" column="77" selection-start-line="151" selection-start-column="77" selection-end-line="151" selection-end-column="77" />
+            <state relative-caret-position="437">
+              <caret line="56" column="187" selection-start-line="56" selection-start-column="187" selection-end-line="56" selection-end-column="187" />
               <folding />
             </state>
           </provider>
@@ -142,11 +142,11 @@
         <option value="$PROJECT_DIR$/templates/cmdb/supplier_edit.html" />
         <option value="$PROJECT_DIR$/templates/cmdb/cmdb_add.html" />
         <option value="$PROJECT_DIR$/cmdb/models.py" />
-        <option value="$PROJECT_DIR$/templates/cmdb/cmdb_lists.html" />
         <option value="$PROJECT_DIR$/RoddySys/urls.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/cmdb/views.py" />
         <option value="$PROJECT_DIR$/templates/cmdb/cmdb_edit.html" />
+        <option value="$PROJECT_DIR$/templates/cmdb/cmdb_lists.html" />
       </list>
     </option>
   </component>
@@ -1001,34 +1001,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cmdb/cmdb_lists.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1341">
-          <caret line="90" column="102" selection-start-line="90" selection-start-column="102" selection-end-line="90" selection-end-column="102" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="149" column="41" selection-start-line="149" selection-start-column="41" selection-end-line="149" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/serversys/server_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="151" column="77" selection-start-line="151" selection-start-column="77" selection-end-line="151" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serversys/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="197" column="23" selection-start-line="197" selection-start-column="23" selection-end-line="197" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1038,16 +1014,6 @@
         <state relative-caret-position="609">
           <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmdb/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="70" column="16" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="16" />
-          <folding>
-            <element signature="e#24#59#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1063,8 +1029,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RoddySys/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="61" column="25" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+        <state relative-caret-position="488">
+          <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmdb/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="82" column="72" selection-start-line="82" selection-start-column="72" selection-end-line="82" selection-end-column="72" />
+          <folding>
+            <element signature="e#24#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serversys/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="197" column="23" selection-start-line="197" selection-start-column="23" selection-end-line="197" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/serversys/server_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="56" column="187" selection-start-line="56" selection-start-column="187" selection-end-line="56" selection-end-column="187" />
           <folding />
         </state>
       </provider>
@@ -1073,6 +1065,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3002">
           <caret line="196" column="71" selection-start-line="196" selection-start-column="71" selection-end-line="196" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cmdb/cmdb_lists.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="94" column="46" selection-start-line="94" selection-start-column="46" selection-end-line="94" selection-end-column="46" />
           <folding />
         </state>
       </provider>
