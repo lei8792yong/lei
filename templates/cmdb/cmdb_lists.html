@@ -152,7 +152,7 @@
                              <script>
                                function clickurl(url){
                                     $("#postdel").click(function() {
-                                        $.get("/server/del/"+url,
+                                        $.get("/cmdb/del/"+url,
                                                  function (data) {
                                                     $('#myModal').modal('hide')
                                                     $("#getdata").html(data);

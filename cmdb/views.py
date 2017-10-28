@@ -108,6 +108,15 @@ def cmdb_edit(request,cid):
 
         return HttpResponse(u'修改成功')
 
+@require_login
+def cmdb_del(request,cid):
+    if request.method == 'GET':
+        if is_common_user(request):
+            return HttpResponse(u'普通用户没有权限')
+        cmdb.objects.get(id=cid).delete()
+        return HttpResponse(u'资产删除成功')
+
+
 
 @require_login
 def supplier_list(request):
