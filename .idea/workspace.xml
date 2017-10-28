@@ -76,8 +76,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmdb/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+            <state relative-caret-position="317">
+              <caret line="77" column="21" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="21" />
               <folding>
                 <element signature="e#24#59#0" expanded="true" />
               </folding>
@@ -85,21 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/account/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="cmdb_edit.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/cmdb/cmdb_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="77" column="70" selection-start-line="77" selection-start-column="70" selection-end-line="77" selection-end-column="70" />
+            <state relative-caret-position="38">
+              <caret line="152" column="149" selection-start-line="152" selection-start-column="149" selection-end-line="152" selection-end-column="149" />
               <folding />
             </state>
           </provider>
@@ -1025,16 +1015,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmdb/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
-          <folding>
-            <element signature="e#24#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/serversys/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
@@ -1059,6 +1039,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cmdb/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="77" column="21" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="21" />
+          <folding>
+            <element signature="e#24#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cmdb/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -1071,8 +1061,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/cmdb/cmdb_edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="77" column="70" selection-start-line="77" selection-start-column="70" selection-end-line="77" selection-end-column="70" />
+        <state relative-caret-position="38">
+          <caret line="152" column="149" selection-start-line="152" selection-start-column="149" selection-end-line="152" selection-end-column="149" />
           <folding />
         </state>
       </provider>
