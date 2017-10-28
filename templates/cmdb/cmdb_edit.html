@@ -67,7 +67,7 @@
                                                                     <div class="col-sm-8">
                                                                         <select class="form-control m-b" name="dept"  >
                                                                             {% for d in Deptdata%}
-                                                                                {%if ServerData.dept.id == d.id%}
+                                                                                {%if Cmdbdata.dept.id == d.id%}
                                                                                     <option value="{{d.id}}" selected> {{d.name}}</option>
                                                                                 {%else%}
                                                                                     <option value="{{d.id}}"> {{d.name}}</option>
