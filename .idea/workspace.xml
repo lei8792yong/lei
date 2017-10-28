@@ -79,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/cmdb/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="647">
-              <caret line="254" column="40" selection-start-line="254" selection-start-column="32" selection-end-line="254" selection-end-column="40" />
+              <caret line="252" column="0" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
               <folding>
                 <element signature="e#24#59#0" expanded="true" />
               </folding>
@@ -1054,7 +1054,7 @@
     <entry file="file://$PROJECT_DIR$/cmdb/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="647">
-          <caret line="254" column="40" selection-start-line="254" selection-start-column="32" selection-end-line="254" selection-end-column="40" />
+          <caret line="252" column="0" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
           <folding>
             <element signature="e#24#59#0" expanded="true" />
           </folding>
