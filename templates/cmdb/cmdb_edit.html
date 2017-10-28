@@ -66,8 +66,8 @@
                                                                     <label class="col-sm-3 control-label" >部门<span class="red-fonts"></span> </label>
                                                                     <div class="col-sm-8">
                                                                         <select class="form-control m-b" name="dept"  >
-                                                                            {% for d in Deptdata%}
-                                                                                {%if Cmdbdata.dept.id == d.id%}
+                                                                            {% for d in deptdata%}
+                                                                                {%if cmdbdata.dept.id == d.id%}
                                                                                     <option value="{{d.id}}" selected> {{d.name}}</option>
                                                                                 {%else%}
                                                                                     <option value="{{d.id}}"> {{d.name}}</option>
