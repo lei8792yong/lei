@@ -206,13 +206,13 @@ def supplier_edit(request,sid):
 
 @require_login
 def exportAgencyCustomers_cmdb(request):
-    datenow=datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d')
-    file=datenow+"资产列表.xls"
+    # datenow=datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d')
+    file="资产列表.xls"
     response = HttpResponse(content_type='application/vnd.ms-excel')
     response['Content-Disposition'] = 'attachment;filename=%s' %file
     wb = xlwt.Workbook(encoding = 'utf-8')
 
-    sheet = wb.add_sheet(str(datenow)+" 资产列表",cell_overwrite_ok=True)
+    sheet = wb.add_sheet(" 资产列表",cell_overwrite_ok=True)
     #1st line
     sheet.write(0,0, 'SN')
     sheet.write(0,1, 'CPU')
