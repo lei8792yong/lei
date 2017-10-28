@@ -40,7 +40,7 @@ urlpatterns += patterns('serversys',
     url(r'^Business/add/$',Business_add,name='Business_add'),
     url(r'^Business/del/(\d+)$',Business_del,name='Business_del'),
     url(r'^Business/edit/(\d+)$',Business_edit,name='Business_edit'),
-    url(r'output/$',exportAgencyCustomers,name='outputdata'),
+    # url(r'output/$',exportAgencyCustomers,name='outputdata'),
 
     url(r'graph/idcservers/$',graphidcservers,name='graphidcservers'),
     url(r'graph/statusservers/$',statusservers,name='statusservers'),
@@ -66,7 +66,7 @@ urlpatterns += patterns('cmdb',
     url(r'^cmdb/supplier/add',supplier_add,name='supplier_add'),
     url(r'^cmdb/supplier/del/(\d+)$',supplier_del,name='supplier_del'),
     url(r'^cmdb/supplier/edit/(\d+)$',supplier_edit,name='supplier_edit'),
-    url(r'^cmdb/output/$', exportAgencyCustomers_cmdb, name='cmdb_outputdata'),
+    url(r'^cmdb/output/$',exportAgencyCustomers_cmdb,name='cmdb_outputdata'),
 
 )
 
