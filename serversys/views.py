@@ -6,6 +6,7 @@ from django.shortcuts import render_to_response,RequestContext
 from account.account_api import *
 from account.models import *
 from serversys.models import *
+from cmdb.models import *
 from django.contrib import auth
 
 import base64
@@ -20,16 +21,14 @@ import time,datetime
 def index(request):
     if request.method =='GET':
         Username=request.session.get('user_name')
-        IDCdata=idclist.objects.all().count()
         Userdata=User.objects.all().count()
-        ServerData=servers.objects.all().count()
+        CmdbData=cmdb.objects.all().count()
 
         kwvars = {
             'request': request,
             'username': Username,
-            'IDCdata':IDCdata,
             'Userdata':Userdata,
-            'ServerData':ServerData,
+            'CmdbData':CmdbData,
 
         }
         return  render_to_response('index.html',kwvars,RequestContext(request))
