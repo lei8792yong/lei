@@ -68,7 +68,7 @@ def cmdb_add(request):
 def cmdb_edit(request,cid):
     if request.method == 'GET':
         Username = request.session.get('user_name')
-        Cmdbdata = cmdb.objects.all(id=cid)
+        Cmdbdata = cmdb.objects.get(id=cid)
         Deptdata = Dept.objects.all()
         Suppdata = group_supplier.objects.all()
 
