@@ -15,7 +15,7 @@
 {% block page-content %}
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">服务器修改</h1>
+                    <h1 class="page-header">资产修改</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -26,7 +26,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            服务器信息修改
+                            资产信息修改
                         </div>
                         <div  class="panel-body">
                             <!-- Tab panes -->
@@ -44,45 +44,22 @@
                                                  <div class="ibox-content" style="display: block;">
                                                      <div>
                                                             <br>
-                                                                <div class="form-group"><label class="col-sm-3 control-label"> 主机名<span class="red-fonts">*</span> </label>
+                                                                <div class="form-group"><label class="col-sm-3 control-label"> CPU<span class="red-fonts"></span> </label>
                                                                     <div class="col-sm-8"><input type="text" class="form-control" name="servername" placeholder="servername"  value="{{ServerData.hostname}}" id="servername"  required="true" ></div>
                                                                 </div>
 
 
-                                                                <div class="form-group"><label class="col-sm-3 control-label"> 外网IP<span class="red-fonts">*</span> </label>
+                                                                <div class="form-group"><label class="col-sm-3 control-label"> motherboard<span class="red-fonts">*</span> </label>
                                                                     <div class="col-sm-8"><input type="text" class="form-control" placeholder="192.168.1.1" name="externalip"  value="{{ServerData.externalip}}"  id="externalip" required="true" ></div>
                                                                 </div>
 
-                                                                <div class="form-group"><label class="col-sm-3 control-label"> 内网IP<span class="red-fonts">*</span> </label>
+                                                                <div class="form-group"><label class="col-sm-3 control-label"> memory<span class="red-fonts">*</span> </label>
                                                                     <div class="col-sm-8"><input type="text" class="form-control" placeholder="10.10.1.1" name="internalip"  value="{{ServerData.internalip}}" id="internalip" required="true"></div>
                                                                 </div>
 
-                                                               <div class="form-group"><label class="col-sm-3 control-label"> 虚拟IP<span class="red-fonts"></span> </label>
+                                                               <div class="form-group"><label class="col-sm-3 control-label"> graphics<span class="red-fonts"></span> </label>
                                                                     <div class="col-sm-8"><input type="text" class="form-control"  name="vip"   value="{{ServerData.virtip}}" id="vip" required="true"></div>
                                                                 </div>
-
-                                                               
-                                                                <div class="hr-line-dashed"></div>
-                                                                <div class="form-group">
-                                                                    <label class="col-sm-3 control-label" for="l_applist">应用<span class="red-fonts">*</span> </label>
-                                                                    <div class="col-sm-8">
-                                                                        <select class="form-control m-b" name="Business"   required="true">
-                                                                            {%for i in Businessdata %}
-                                                                                 {%if ServerData.businessname.id == i.id%}
-                                                                                    <option value="{{i.id}}" selected> {{i.name}}</option>
-                                                                                 {%else%}
-                                                                                    <option value="{{i.id}}"> {{i.name}}</option>
-                                                                                 {%endif%}
-                                                                            {%endfor%}
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-
-
-                                                                <div class="form-group"><label class="col-sm-3 control-label"> 密码<span class="red-fonts"></span> </label>
-                                                                    <div class="col-sm-8"><input type="text" class="form-control" value="{{Passwd}}" name="passwd" ></div>
-                                                                </div>
-
 
                                                                 <div class="hr-line-dashed"></div>
                                                                 <div class="form-group">
@@ -119,40 +96,51 @@
                                                 <br>
                                               
                                                    <div class="hr-line-dashed"></div>
-                                                    <div class="form-group"><label class="col-sm-2 control-label"> CPU<span class="red-fonts"></span> </label>
+                                                    <div class="form-group"><label class="col-sm-2 control-label"> hard_disk1<span class="red-fonts"></span> </label>
                                                         <div class="col-sm-8"><input type="text" class="form-control"  value="{{ServerData.cpu}}" name="cpu"  ></div>
                                                     </div>
 
                                                 <div class="hr-line-dashed"></div>
-                                                    <div class="form-group"><label class="col-sm-2 control-label"> 频率<span class="red-fonts"></span> </label>
+                                                    <div class="form-group"><label class="col-sm-2 control-label"> keyboard<span class="red-fonts"></span> </label>
                                                         <div class="col-sm-8"><input type="text" class="form-control"  value="{{ServerData.cpumhz}}" name="cpumhz"  ></div>
                                                     </div>
 
 
                                                    <div class="hr-line-dashed"></div>
-                                                    <div class="form-group"><label class="col-sm-2 control-label"> 内存<span class="red-fonts"></span> </label>
+                                                    <div class="form-group"><label class="col-sm-2 control-label"> chassis<span class="red-fonts"></span> </label>
                                                         <div class="col-sm-8"><input type="text" class="form-control" value="{{ServerData.mem}}" name="mem"  ></div>
                                                     </div>
 
-                                                         <div class="hr-line-dashed"></div>
-                                                    <div class="form-group"><label class="col-sm-2 control-label"> 磁盘<span class="red-fonts"></span> </label>
+                                                    <div class="hr-line-dashed"></div>
+                                                    <div class="form-group"><label class="col-sm-2 control-label"> power_supply<span class="red-fonts"></span> </label>
                                                         <div class="col-sm-8"><input type="text" class="form-control"  value="{{ServerData.disk}}" name="disk"  ></div>
                                                     </div>
 
+                                                    <div class="hr-line-dashed"></div>
+                                                    <div class="form-group"><label class="col-sm-2 control-label"> monitor<span class="red-fonts"></span> </label>
+                                                        <div class="col-sm-8"><input type="text" class="form-control"  value="{{ServerData.disk}}" name="disk"  ></div>
+                                                    </div>
 
+                                                    <div class="hr-line-dashed"></div>
+                                                    <div class="form-group"><label class="col-sm-2 control-label"> who_uses<span class="red-fonts"></span> </label>
+                                                        <div class="col-sm-8"><input type="text" class="form-control"  value="{{ServerData.disk}}" name="disk"  ></div>
+                                                    </div>
 
-
+                                                    <div class="hr-line-dashed"></div>
+                                                    <div class="form-group"><label class="col-sm-2 control-label"> price<span class="red-fonts"></span> </label>
+                                                        <div class="col-sm-8"><input type="text" class="form-control"  value="{{ServerData.disk}}" name="disk"  ></div>
+                                                    </div>
 
                                                     <div class="hr-line-dashed"></div>
                                                     <div class="form-group">
-                                                        <label class="col-sm-2 control-label" for="l_applist">IDC<span class="red-fonts">*</span> </label>
+                                                        <label class="col-sm-2 control-label" for="l_applist">supplier<span class="red-fonts">*</span> </label>
                                                         <div class="col-sm-6">
                                                             <select class="form-control m-b" name="idc" >
-                                                                {%for i in Idcdata%}
-                                                                    {%if ServerData.idc.id == i.id %}
-                                                                        <option value="{{i.id}}" selected>{{i.idcname}}</option>
+                                                                {%for i in Suppdata%}
+                                                                    {%if cmdbdata.supplier.id == i.id %}
+                                                                        <option value="{{i.id}}" selected>{{i.supplier_name}}</option>
                                                                     {%else%}
-                                                                        <option value="{{i.id}}">{{i.idcname}}</option>
+                                                                        <option value="{{i.id}}">{{i.supplier_name}}</option>
                                                                     {%endif%}
                                                                 {%endfor%}
                                                             </select>
@@ -160,42 +148,9 @@
                                                     </div>
 
 
-                                                   <div class="hr-line-dashed"></div>
-                                                    <div class="form-group">
-                                                        <label class="col-sm-2 control-label" >类型<span class="red-fonts">*</span> </label>
-                                                        <div class="col-sm-6">
-                                                            <select class="form-control m-b" name="type" >
-                                                                    {% for k,v in ServerType.items%}
-                                                                        {%if ServerData.type == k%}
-                                                                            <option value="{{k}}" selected>{{v}}</option>
-                                                                        {%else%}
-                                                                            <option value="{{k}}" >{{v}}</option>
-                                                                        {%endif%}
-                                                                    {%endfor%}
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
-
-                                                   <div class="hr-line-dashed"></div>
-                                                    <div class="form-group">
-                                                        <label class="col-sm-2 control-label">系统<span class="red-fonts">*</span> </label>
-                                                        <div class="col-sm-6">
-                                                            <select class="form-control m-b" name="system" >
-                                                                    {% for k,v in Server_system.items%}
-                                                                        {%if ServerData.system == k%}
-                                                                            <option value="{{k}}" selected>{{v}}</option>
-                                                                        {%else%}
-                                                                            <option value="{{k}}" >{{v}}</option>
-                                                                        {%endif%}
-                                                                    {%endfor%}
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
                                                 <div class="hr-line-dashed"></div>
                                                     <div class="form-group"><label class="col-sm-2 control-label"> 备注<span class="red-fonts"></span> </label>
-                                                        <div class="col-sm-8"><textarea rows="3" class="form-control"   name="description">{{ServerData.comment}}</textarea></div>
+                                                        <div class="col-sm-8"><textarea rows="3" class="form-control"   name="description">{{Cmdbdata.comment}}</textarea></div>
                                                     </div>
 
 
@@ -239,7 +194,7 @@
                   </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                        <a class="btn btn-primary" href="/server/list/">确定</a>
+                        <a class="btn btn-primary" href="/cmdb/list/">确定</a>
 
                     </div>
                 </div>
@@ -253,38 +208,6 @@
              <script>
                        $(function(){
                             $("#serveradd").click(function() {
-                                  if($(servername).val()=='') {
-                                    　　$("#getdata").html("请输入主机名");
-                                        $('#myModal').modal('show');
-                                        return false;
-                                　}
-
-
-
-                                var reg=/^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$/;
-
-
-
-                                if (!reg.test($("#externalip").val())) {
-                                    　　$("#getdata").html("请输入正确的外网IP!!!");
-                                        $('#myModal').modal('show');
-                                        return false;
-                                　}
-
-                                 if (!reg.test($("#internalip").val())) {
-                                    　　$("#getdata").html("请输入正确的内网IP!!!");
-                                        $('#myModal').modal('show');
-                                        return false;
-                                　}
-
-                                  if(!$(vip).val()=='') {
-                                       if (!reg.test($("#vip").val())) {
-                                    　　$("#getdata").html("请输入正确的虚拟IP!!!");
-                                        $('#myModal').modal('show');
-                                        return false;
-                                　       }　
-                                　}
-
 
                                 $.post("",
                                          {servername: $("input[name='servername']").val(),
