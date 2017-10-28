@@ -250,7 +250,7 @@ def exportAgencyCustomers_cmdb(request):
         sheet.write(row,13, cmdbs.dept.name)
         sheet.write(row,14, cmdbs.create_Date)
         sheet.write(row,15, cmdbs.comment)
-        addtimes = datetime.datetime.strftime(cmdbs.addtime, '%Y-%m-%d %H:%M:%S')
+        addtimes = datetime.datetime.strftime(cmdbs.create_Date, '%Y-%m-%d %H:%M:%S')
 
         sheet.write(row,16, str(addtimes))
         row=row + 1
