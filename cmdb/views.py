@@ -206,13 +206,13 @@ def supplier_edit(request,sid):
 
 @require_login
 def exportAgencyCustomers_cmdb(request):
-    # datenow=datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d')
-    file="资产列表.xls"
+    datenow=datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d')
+    file=datenow+"资产列表.xls"
     response = HttpResponse(content_type='application/vnd.ms-excel')
     response['Content-Disposition'] = 'attachment;filename=%s' %file
     wb = xlwt.Workbook(encoding = 'utf-8')
 
-    sheet = wb.add_sheet(" 资产列表",cell_overwrite_ok=True)
+    sheet = wb.add_sheet(str(datenow)+" 资产列表",cell_overwrite_ok=True)
     #1st line
     sheet.write(0,0, 'SN')
     sheet.write(0,1, 'CPU')
@@ -228,9 +228,8 @@ def exportAgencyCustomers_cmdb(request):
     sheet.write(0,11, '价格')
     sheet.write(0,12, '供应商')
     sheet.write(0,13, '部门')
-    sheet.write(0,14, '采购时间')
-    sheet.write(0,15, '详细')
-    sheet.write(0,16, '添加时间')
+    sheet.write(0,14, '详细')
+    sheet.write(0,15, '添加时间')
     row = 1
     for cmdbs in cmdb.objects.all():
 
@@ -248,9 +247,10 @@ def exportAgencyCustomers_cmdb(request):
         sheet.write(row,11, cmdbs.price)
         sheet.write(row,12, cmdbs.supplier.supplier_name)
         sheet.write(row,13, cmdbs.dept.name)
-        sheet.write(row,14, cmdbs.create_Date)
-        sheet.write(row,15, cmdbs.comment)
+        sheet.write(row,14, cmdbs.comment)
+        addtimes = datetime.datetime.strftime(cmdbs.create_Date, '%Y-%m-%d %H:%M:%S')
 
+        sheet.write(row,15, str(addtimes))
         row=row + 1
     output = StringIO.StringIO()
     wb.save(output)
