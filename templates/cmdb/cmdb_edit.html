@@ -45,25 +45,25 @@
                                                      <div>
                                                             <br>
                                                                 <div class="form-group"><label class="col-sm-3 control-label"> CPU<span class="red-fonts"></span> </label>
-                                                                    <div class="col-sm-8"><input type="text" class="form-control" name="servername" placeholder="servername"  value="{{ServerData.hostname}}" id="servername"  required="true" ></div>
+                                                                    <div class="col-sm-8"><input type="text" class="form-control" name="cpu"  value="{{Cmdbdata.cpu}}" required="true" ></div>
                                                                 </div>
 
 
-                                                                <div class="form-group"><label class="col-sm-3 control-label"> motherboard<span class="red-fonts">*</span> </label>
-                                                                    <div class="col-sm-8"><input type="text" class="form-control" placeholder="192.168.1.1" name="externalip"  value="{{ServerData.externalip}}"  id="externalip" required="true" ></div>
+                                                                <div class="form-group"><label class="col-sm-3 control-label"> 主板<span class="red-fonts"></span> </label>
+                                                                    <div class="col-sm-8"><input type="text" class="form-control"  name="motherboard"  value="{{Cmdbdata.motherboard}}" required="true" ></div>
                                                                 </div>
 
-                                                                <div class="form-group"><label class="col-sm-3 control-label"> memory<span class="red-fonts">*</span> </label>
-                                                                    <div class="col-sm-8"><input type="text" class="form-control" placeholder="10.10.1.1" name="internalip"  value="{{ServerData.internalip}}" id="internalip" required="true"></div>
+                                                                <div class="form-group"><label class="col-sm-3 control-label"> 内存条<span class="red-fonts"></span> </label>
+                                                                    <div class="col-sm-8"><input type="text" class="form-control" name="memory"  value="{{Cmdbdata.memory}}" required="true"></div>
                                                                 </div>
 
-                                                               <div class="form-group"><label class="col-sm-3 control-label"> graphics<span class="red-fonts"></span> </label>
-                                                                    <div class="col-sm-8"><input type="text" class="form-control"  name="vip"   value="{{ServerData.virtip}}" id="vip" required="true"></div>
+                                                               <div class="form-group"><label class="col-sm-3 control-label"> 显卡<span class="red-fonts"></span> </label>
+                                                                    <div class="col-sm-8"><input type="text" class="form-control"  name="graphics"   value="{{Cmdbdata.graphics}}" required="true"></div>
                                                                 </div>
 
                                                                 <div class="hr-line-dashed"></div>
                                                                 <div class="form-group">
-                                                                    <label class="col-sm-3 control-label" >部门<span class="red-fonts">*</span> </label>
+                                                                    <label class="col-sm-3 control-label" >部门<span class="red-fonts"></span> </label>
                                                                     <div class="col-sm-8">
                                                                         <select class="form-control m-b" name="dept"  >
                                                                             {% for d in Deptdata%}
@@ -96,44 +96,44 @@
                                                 <br>
                                               
                                                    <div class="hr-line-dashed"></div>
-                                                    <div class="form-group"><label class="col-sm-2 control-label"> hard_disk1<span class="red-fonts"></span> </label>
-                                                        <div class="col-sm-8"><input type="text" class="form-control"  value="{{ServerData.cpu}}" name="cpu"  ></div>
+                                                    <div class="form-group"><label class="col-sm-2 control-label"> 硬盘<span class="red-fonts"></span> </label>
+                                                        <div class="col-sm-8"><input type="text" class="form-control"  value="{{Cmdbdata.hard_disk1}}" name="hard_disk1"  ></div>
                                                     </div>
 
                                                 <div class="hr-line-dashed"></div>
-                                                    <div class="form-group"><label class="col-sm-2 control-label"> keyboard<span class="red-fonts"></span> </label>
-                                                        <div class="col-sm-8"><input type="text" class="form-control"  value="{{ServerData.cpumhz}}" name="cpumhz"  ></div>
+                                                    <div class="form-group"><label class="col-sm-2 control-label"> 键盘/鼠标<span class="red-fonts"></span> </label>
+                                                        <div class="col-sm-8"><input type="text" class="form-control"  value="{{Cmdbdata.keyboard}}" name="keyboard"  ></div>
                                                     </div>
 
 
                                                    <div class="hr-line-dashed"></div>
-                                                    <div class="form-group"><label class="col-sm-2 control-label"> chassis<span class="red-fonts"></span> </label>
-                                                        <div class="col-sm-8"><input type="text" class="form-control" value="{{ServerData.mem}}" name="mem"  ></div>
+                                                    <div class="form-group"><label class="col-sm-2 control-label"> 机箱<span class="red-fonts"></span> </label>
+                                                        <div class="col-sm-8"><input type="text" class="form-control" value="{{Cmdbdata.chassis}}" name="chassis"  ></div>
                                                     </div>
 
                                                     <div class="hr-line-dashed"></div>
-                                                    <div class="form-group"><label class="col-sm-2 control-label"> power_supply<span class="red-fonts"></span> </label>
-                                                        <div class="col-sm-8"><input type="text" class="form-control"  value="{{ServerData.disk}}" name="disk"  ></div>
+                                                    <div class="form-group"><label class="col-sm-2 control-label"> 电源<span class="red-fonts"></span> </label>
+                                                        <div class="col-sm-8"><input type="text" class="form-control"  value="{{Cmdbdata.power_supply}}" name="power_supply"  ></div>
                                                     </div>
 
                                                     <div class="hr-line-dashed"></div>
-                                                    <div class="form-group"><label class="col-sm-2 control-label"> monitor<span class="red-fonts"></span> </label>
-                                                        <div class="col-sm-8"><input type="text" class="form-control"  value="{{ServerData.disk}}" name="disk"  ></div>
+                                                    <div class="form-group"><label class="col-sm-2 control-label"> 显示器<span class="red-fonts"></span> </label>
+                                                        <div class="col-sm-8"><input type="text" class="form-control"  value="{{Cmdbdata.monitor}}" name="monitor"  ></div>
                                                     </div>
 
                                                     <div class="hr-line-dashed"></div>
-                                                    <div class="form-group"><label class="col-sm-2 control-label"> who_uses<span class="red-fonts"></span> </label>
-                                                        <div class="col-sm-8"><input type="text" class="form-control"  value="{{ServerData.disk}}" name="disk"  ></div>
+                                                    <div class="form-group"><label class="col-sm-2 control-label"> 使用者<span class="red-fonts"></span> </label>
+                                                        <div class="col-sm-8"><input type="text" class="form-control"  value="{{Cmdbdata.who_uses}}" name="who_uses"  ></div>
                                                     </div>
 
                                                     <div class="hr-line-dashed"></div>
-                                                    <div class="form-group"><label class="col-sm-2 control-label"> price<span class="red-fonts"></span> </label>
-                                                        <div class="col-sm-8"><input type="text" class="form-control"  value="{{ServerData.disk}}" name="disk"  ></div>
+                                                    <div class="form-group"><label class="col-sm-2 control-label"> 采购价<span class="red-fonts"></span> </label>
+                                                        <div class="col-sm-8"><input type="text" class="form-control"  value="{{Cmdbdata.price}}" name="price"  ></div>
                                                     </div>
 
                                                     <div class="hr-line-dashed"></div>
                                                     <div class="form-group">
-                                                        <label class="col-sm-2 control-label" for="l_applist">supplier<span class="red-fonts">*</span> </label>
+                                                        <label class="col-sm-2 control-label" for="l_applist">供应商<span class="red-fonts"></span> </label>
                                                         <div class="col-sm-6">
                                                             <select class="form-control m-b" name="idc" >
                                                                 {%for i in Suppdata%}
@@ -210,21 +210,20 @@
                             $("#serveradd").click(function() {
 
                                 $.post("",
-                                         {servername: $("input[name='servername']").val(),
-                                               externalip: $("input[name='externalip']").val(),
-                                               internalip: $("input[name='internalip']").val(),
-                                               Business: $("select[name='Business']").val(),
-                                               passwd: $("input[name='passwd']").val(),
+                                         {cpu: $("input[name='cpu']").val(),
+                                               motherboard: $("input[name='motherboard']").val(),
+                                               memory: $("input[name='memory']").val(),
+                                               graphics: $("input[name='graphics']").val(),
+                                               hard_disk1: $("input[name='hard_disk1']").val(),
+                                               keyboard: $("input[name='keyboard']").val(),
+                                               chassis: $("input[name='chassis']").val(),
+                                               power_supply: $("input[name='power_supply']").val(),
+                                               monitor: $("input[name='monitor']").val(),
+                                               who_uses: $("input[name='who_uses']").val(),
+                                               price: $("input[name='price']").val(),
+                                               supplier: $("select[name='supplier']").val(),
                                                dept: $("select[name='dept']").val(),
-                                               cpu: $("input[name='cpu']").val(),
-                                               cpumhz: $("input[name='cpumhz']").val(),
-                                               mem: $("input[name='mem']").val(),
-                                               vip: $("input[name='vip']").val(),
-                                               disk: $("input[name='disk']").val(),
-                                               idc: $("select[name='idc']").val(),
-                                               type: $("select[name='type']").val(),
-                                               system: $("select[name='system']").val(),
-                                               desc: $("input[name='description']").val(),
+                                               comment: $("input[name='description']").val(),
                                                csrfmiddlewaretoken: '{{ csrf_token }}'},
                                          function (data) {
                                             $("#getdata").html(data);

@@ -82,6 +82,10 @@ def cmdb_edit(request,cid):
 
         return render_to_response('cmdb/cmdb_edit.html',kwvars,RequestContext(request))
 
+    if request.method == 'POST':
+
+        return HttpResponse('ok')
+
 
 @require_login
 def supplier_list(request):
