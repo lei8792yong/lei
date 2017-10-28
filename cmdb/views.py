@@ -231,7 +231,6 @@ def exportAgencyCustomers_cmdb(request):
     sheet.write(0,14, '采购时间')
     sheet.write(0,15, '详细')
     sheet.write(0,16, '添加时间')
-
     row = 1
     for cmdb in cmdb.objects.all():
 
