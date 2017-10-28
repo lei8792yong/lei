@@ -136,7 +136,7 @@
                                                         <label class="col-sm-2 control-label" for="l_applist">供应商<span class="red-fonts"></span> </label>
                                                         <div class="col-sm-6">
                                                             <select class="form-control m-b" name="idc" >
-                                                                {%for i in Suppdata%}
+                                                                {%for i in suppdata%}
                                                                     {%if cmdbdata.supplier.id == i.id %}
                                                                         <option value="{{i.id}}" selected>{{i.supplier_name}}</option>
                                                                     {%else%}
