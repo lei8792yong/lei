@@ -8,6 +8,10 @@ from account.models import *
 from serversys.models import *
 from cmdb.models import *
 
+import time,datetime
+import xlwt
+import StringIO
+
 # Create your views here.
 
 @require_login
@@ -200,3 +204,59 @@ def supplier_edit(request,sid):
             GetSept.save()
             return HttpResponse(u"供应商修改成功 2")
 
+@require_login
+def exportAgencyCustomers_cmdb(request):
+    datenow=datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d')
+    file=datenow+"资产列表.xls"
+    response = HttpResponse(content_type='application/vnd.ms-excel')
+    response['Content-Disposition'] = 'attachment;filename=%s' %file
+    wb = xlwt.Workbook(encoding = 'utf-8')
+
+    sheet = wb.add_sheet(str(datenow)+" 资产列表",cell_overwrite_ok=True)
+    #1st line
+    sheet.write(0,0, 'SN')
+    sheet.write(0,1, 'CPU')
+    sheet.write(0,2, '主板')
+    sheet.write(0,3, '内存条')
+    sheet.write(0,4, '显卡')
+    sheet.write(0,5, '硬盘')
+    sheet.write(0,6, '键盘/鼠标')
+    sheet.write(0,7, '机箱')
+    sheet.write(0,8, '电源')
+    sheet.write(0,9, '显示器')
+    sheet.write(0,10, '使用者')
+    sheet.write(0,11, '价格')
+    sheet.write(0,12, '供应商')
+    sheet.write(0,13, '部门')
+    sheet.write(0,14, '采购时间')
+    sheet.write(0,15, '详细')
+    sheet.write(0,16, '添加时间')
+
+    row = 1
+    for cmdb in cmdb.objects.all():
+
+        sheet.write(row,0, cmdb.id)
+        sheet.write(row,1, cmdb.cpu)
+        sheet.write(row,2, cmdb.motherboard)
+        sheet.write(row,3, cmdb.memory)
+        sheet.write(row,4, cmdb.graphics)
+        sheet.write(row,5, cmdb.hard_disk1)
+        sheet.write(row,6, cmdb.keyboard)
+        sheet.write(row,7, cmdb.chassis)
+        sheet.write(row,8, cmdb.power_supply)
+        sheet.write(row,9, cmdb.monitor)
+        sheet.write(row,10, cmdb.who_uses)
+        sheet.write(row,11, cmdb.price)
+        sheet.write(row,12, cmdb.supplier.supplier_name)
+        sheet.write(row,13, cmdb.dept.name)
+        sheet.write(row,14, cmdb.create_Date)
+        sheet.write(row,15, cmdb.comment)
+        addtimes = datetime.datetime.strftime(cmdb.addtime, '%Y-%m-%d %H:%M:%S')
+
+        sheet.write(row,16, str(addtimes))
+        row=row + 1
+    output = StringIO.StringIO()
+    wb.save(output)
+    output.seek(0)
+    response.write(output.getvalue())
+    return response

@@ -66,5 +66,7 @@ urlpatterns += patterns('cmdb',
     url(r'^cmdb/supplier/add',supplier_add,name='supplier_add'),
     url(r'^cmdb/supplier/del/(\d+)$',supplier_del,name='supplier_del'),
     url(r'^cmdb/supplier/edit/(\d+)$',supplier_edit,name='supplier_edit'),
+    url(r'cmdb/output/$', exportAgencyCustomers_cmdb, name='cmdb_outputdata'),
+
 )
 
