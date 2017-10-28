@@ -83,8 +83,30 @@ def cmdb_edit(request,cid):
         return render_to_response('cmdb/cmdb_edit.html',kwvars,RequestContext(request))
 
     if request.method == 'POST':
+        if is_common_user(request):
+            return HttpResponse(u'普通用户没有权限')
 
-        return HttpResponse('ok')
+        cmdbedit = cmdb.objects.get(id=cid)
+        cmdbedit.cpu = request.POST.get('cpu')
+        cmdbedit.motherboard = request.POST.get('motherboard')
+        cmdbedit.memory = request.POST.get('memory')
+        cmdbedit.graphics = request.POST.get('graphics')
+        dept_id = request.POST.get('dept')
+        cmdbedit.deptname = Dept.objects.get(id=dept_id)
+        cmdbedit.hard_disk1 = request.POST.get('hard_disk1')
+        cmdbedit.keyboard = request.POST.get('keyboard')
+        cmdbedit.chassis = request.POST.get('chassis')
+        cmdbedit.power_supply = request.POST.get('power_supply')
+        cmdbedit.monitor = request.POST.get('monitor')
+        cmdbedit.who_uses = request.POST.get('who_uses')
+        cmdbedit.price = request.POST.get('price')
+        supplier_id = request.POST.get('supplier')
+        cmdbedit.supplier = group_supplier.objects.get(id=supplier_id)
+        cmdbedit.datetime = request.POST.get('datetime')
+        cmdbedit.comment = request.POST.get('description')
+        cmdbedit.save()
+
+        return HttpResponse(u'修改成功')
 
 
 @require_login
