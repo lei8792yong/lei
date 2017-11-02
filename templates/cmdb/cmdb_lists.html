@@ -52,6 +52,7 @@
                                     <thead>
                                         <tr>
                                             <th>SN</th>
+                                            <th>类型</th>
                                             <th>CPU</th>
                                             <th>主板</th>
                                             <th>内存条</th>
@@ -73,6 +74,7 @@
                                     {%for s in cmdb%}
                                         <tr class="odd gradeX">
                                             <td>{{s.id}}</td>
+                                            <td>{{s.type}}</td>
                                             <td>{{s.cpu}}</td>
                                             <td>{{s.motherboard}}</td>
                                             <td>{{s.memory}}</td>
