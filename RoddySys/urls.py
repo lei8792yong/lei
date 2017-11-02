@@ -8,7 +8,7 @@ from cmdb.views import *
 
 
 
-urlpatterns = patterns('',
+urlpatterns = [
     # Examples:
     # url(r'^$', 'RoddySys.views.home', name='home'),
     url(r'^account/', include('account.urls')),
@@ -16,7 +16,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$','serversys.views.index',name='index'),
 	url(r'^static/(?P<path>.*)$', 'django.views.static.serve', { 'document_root': settings.STATIC_ROOT,}),
-)
+]
 
 urlpatterns += patterns('serversys',
     url(r'^server/list/$',server_lists,name='server_list'),

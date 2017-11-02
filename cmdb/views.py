@@ -45,6 +45,7 @@ def cmdb_add(request):
         return render_to_response('cmdb/cmdb_add.html',kwvars,RequestContext(request))
 
     if request.method == "POST":
+        type = request.POST.get('type')
         cpu = request.POST.get('cpu')
         motherboard = request.POST.get('motherboard')
         memory = request.POST.get('memory')
@@ -63,7 +64,7 @@ def cmdb_add(request):
         datetime = request.POST.get('datetime')
         description = request.POST.get('description')
 
-        p=cmdb(cpu=cpu,motherboard=motherboard,memory=memory,graphics=graphics,hard_disk1=hard_disk1,keyboard=keyboard,
+        p=cmdb(type=type,cpu=cpu,motherboard=motherboard,memory=memory,graphics=graphics,hard_disk1=hard_disk1,keyboard=keyboard,
                chassis=chassis,power_supply=power_supply,monitor=monitor,who_uses=who_uses,price=price,supplier=supplier,dept=deptname,comment=description,create_Date=datetime)
         p.save()
         return HttpResponse(u'添加成功')
