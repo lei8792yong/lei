@@ -1,10 +1,10 @@
 
-from django.conf.urls import include, url
+from django.conf.urls import patterns,include, url
 from django.contrib import admin
 from django.conf import settings
 from account.views import *
 
-urlpatterns = ['',
+urlpatterns = patterns('',
   url(r'^login/$',login_user,name='login_user'),
   url(r'^logout/$',logout_user,name='logout_user'),
   url(r'^list/$',account_list,name='account_list'),
@@ -17,5 +17,4 @@ urlpatterns = ['',
   url(r'^dept/add/$',dept_add,name='dept_add'),
   url(r'^dept/edit/(\d+)$',dept_edit,name='dept_edit'),
   url(r'^setpasswd/(\d+)$',set_passwd,name='set_passwd'),
-
-]
+)
