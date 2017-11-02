@@ -8,7 +8,7 @@ from cmdb.views import *
 
 
 
-urlpatterns = patterns(
+urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'RoddySys.views.home', name='home'),
     url(r'^account/', include('account.urls')),
